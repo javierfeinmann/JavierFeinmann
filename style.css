@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Mandali&family=Open+Sans&family=Roboto&family=Sawarabi+Gothic&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Aboreto', cursive;
+}
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-top: 8px solid rgba(0, 0, 0, 0.133);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.133);
+}
+.titles{
+    font-size: 70px;
+    font-weight: bold;
+}
+.title-index{
+    font-size: 70px;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+}
+.img-perfil{
+    height: 500px;
+    width: auto;
+    border-radius: 50%;
+}
+.text-index{
+    text-align: justify;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cv{
+    margin-top: 15px;
+    width: 100%;
+}
+.accordion{
+    margin: 35px;
+}
+.accordion-img{
+    height: 300px;
+    width: auto;
+    display: flex;
+    align-self: center;
+}
+.accordion-text{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    padding: 0;
+    list-style: none;
+}
