@@ -7,7 +7,9 @@
     font-family: 'Open Sans', sans-serif;
     color: rgb(13, 13, 119);
 }
-
+header{
+    width: 100%;
+}
 .navbar{
     font-size: 20px;
     background-color: rgb(4, 83, 4);
@@ -106,14 +108,23 @@ button.accordion-button:focus{
 }
 
 @media (min-width: 0px) and (max-width: 767px){
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .title-index{
+        font-size: 60px;
+    }
     .img-perfil{
-        max-height: 400px;
+        max-height: 350px;
         width: auto;
         padding-left: 0;
         padding-bottom: 12px;
     }
     .accordion-img{
-        height: 200px;
+        max-height: 180px;
         width: auto;
     }
 }
