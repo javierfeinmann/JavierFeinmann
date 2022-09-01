@@ -104,3 +104,16 @@ button.accordion-button:focus{
     list-style: none;
     color: rgb(13, 13, 119);
 }
+
+@media (min-width: 0px) and (max-width: 767px){
+    .img-perfil{
+        max-height: 400px;
+        width: auto;
+        padding-left: 0;
+        padding-bottom: 12px;
+    }
+    .accordion-img{
+        height: 200px;
+        width: auto;
+    }
+}
