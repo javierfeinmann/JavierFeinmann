@@ -78,8 +78,8 @@ header{
     color: rgb(3, 3, 67);
 }
 .img-perfil{
-    height: 450px;
-    width: auto;
+    max-height: 450px;
+    max-width: 450px;
     padding-bottom: 12px;
 }
 .img-perfil img{
