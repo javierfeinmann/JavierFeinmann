@@ -7,26 +7,56 @@
     font-family: 'Open Sans', sans-serif;
     color: rgb(13, 13, 119);
 }
+
 header{
     width: 100%;
 }
 .navbar{
     font-size: 20px;
-    background-color: rgb(4, 83, 4);
+    background-color: rgb(3, 3, 67);
 }
 .navbar-brand{
     font-size: 30px;
     font-family: 'Aboreto', cursive;
     color: white;
 }
-.nav-link{
+.navbar-brand:hover{
     color: white;
 }
-.navbar-nav .nav-link.active{
+.navbar-brand:focus{
+    color: white;
+}
+.nav-link{
     color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 0;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link.disabled{
+    color: rgba(128, 128, 128, 0.315);
+}
+.navbar-nav .nav-link.active{
+    color: white;
+    border-bottom: 5px solid white;
+}
+.navbar-toggler{
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: rgba(255, 255, 255, 0.6);
 }
 #navbarSupportedContent{
     justify-content: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
+    .nav-item{
+        width: fit-content;
+    }
 }
 .title{
     text-align: center;
@@ -48,7 +78,7 @@ header{
     color: rgb(3, 3, 67);
 }
 .img-perfil{
-    height: 500px;
+    height: 450px;
     width: auto;
     padding-bottom: 12px;
 }
@@ -78,17 +108,17 @@ header{
     color: rgb(13, 13, 119);
 }
 .accordion-button:not(.collapsed){
-    background-color: rgba(4, 83, 4, 0.309);
+    background-color: rgba(3, 3, 67, 0.307);
     color: rgb(13, 13, 119);
 }
 button.accordion-button:focus{
-    background-color: rgb(4, 83, 4);
+    background-color: rgb(3, 3, 67);
     color: white;
 }
 .accordion-img{
-    height: 300px;
-    width: auto;
+    max-height: 300px;
     display: flex;
+    justify-content: center;
     align-self: center;
     padding-bottom: 12px;
 }
@@ -116,15 +146,5 @@ button.accordion-button:focus{
     }
     .title-index{
         font-size: 60px;
-    }
-    .img-perfil{
-        max-height: 350px;
-        width: auto;
-        padding-left: 0;
-        padding-bottom: 12px;
-    }
-    .accordion-img{
-        max-height: 180px;
-        width: auto;
     }
 }

@@ -3,7 +3,7 @@ const accordionPapers = document.getElementById('accordionPanelsStayOpenPapers')
 const accordionProgress = document.getElementById('accordionPanelsStayOpenProgress')
 
 async function papers(){
-    const response = await fetch ('papers.json')
+    const response = await fetch ('../papers.json')
     return await response.json()
 }
 
@@ -16,7 +16,7 @@ papers().then(data =>{
         accordionPapers.appendChild(item);
 
         let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body"><div class="row d-flex justify-content-center"><div class="col-xl-4 accordion-img"><img src="../img/${element.img}.jpg" alt=""></div><div class="col-xl-8 accordion-text"><i>${element.subtitle}</i>
+        body.innerHTML = `<div class="accordion-body"><div class="row d-flex justify-content-center"><div class="col-xl-4 accordion-img"><img src="../img/${element.img}.jpg" class="img-fluid" alt="img-${element.id}"></div><div class="col-xl-8 accordion-text"><i>${element.subtitle}</i>
         <p>${element.text} [<a href="${element.link}">Working paper</a>] [<a href="${element.slides}">Slides</a>]</p></div></div></div>`;
         body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
         body.setAttribute("class", "accordion-collapse collapse");
@@ -26,7 +26,7 @@ papers().then(data =>{
 })
 
 async function progress(){
-    const response = await fetch ('progress.json')
+    const response = await fetch ('../progress.json')
     return await response.json()
 }
 
