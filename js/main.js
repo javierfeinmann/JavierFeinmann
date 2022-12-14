@@ -11,7 +11,7 @@ papers().then(data =>{
     data.forEach(element => {
         let item = document.createElement("div");
         item.innerHTML = `<h2 class="accordion-header" id="panelsStayOpen-heading${element.id}">
-        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title}</button></h2>`;
+        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title} ${element.coauthor}</button></h2>`;
         item.setAttribute("class", "accordion-item");
         accordionPapers.appendChild(item);
 
