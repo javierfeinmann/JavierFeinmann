@@ -9,7 +9,7 @@
 
     {
         "title": "Former Coworkers and Startup Performance (w/ Roberto Hsu)",
-        "subtitle": "",
+        "subtitle": "In this paper, we study if it is good to start a firm hiring people that you previously worked with. We focus on a particular type of personal connection: workplace connections made by entrepreneurs while they were employees. We create a novel data set from self-collected firm records that track entrepreneurs of all formal businesses in the biggest state of Brazil and match it to matched employer-employee data that covers the universe of formal employment in Brazil. This allows us to both track entrepreneurs' employment history, create their network of former coworkers, observe employees in new firms, and track their startups' development through time. In order to recover develop a semi-parametric model where firms decide their set of initial workers from a pool of network and market alternatives, and workers choose whether to join a startup performance based on their characteristics and employment status. Although generalizable to all kinds of connections, to investigate the question empirically, we focus on a particular type of relation: former coworker relationships.",
         "text": "",
         "id": "Progress-Two"
     },
