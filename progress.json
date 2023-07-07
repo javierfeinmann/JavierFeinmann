@@ -2,7 +2,7 @@
 
     {
         "title": "How Education Shapes Entrepreneurship (w/ Roberto Hsu and Sebastian Otero)",
-        "subtitle": "Funded by the Stone Center on Wealth and Income Inequality",
+        "subtitle": "Funded by the Stone Center and the Institute for Research on Labor and Employment",
         "text": "In this paper, we combine novel data on the universe of entrepreneurs between 2000 and 2022 with standarized tests, college application and the census of higher education in Brazil. We first document what the majors and students that end up opening a firm. Moreover, we characterize the type of entrepreneurs by differentiating firms based on survival rate and employment creation. To deal with endogeneity problems, we take advantage of the Brazilian unique setting to get admitted to public universities. We use a regression discontinuity approach around the cutoffs of admission for every program, which allows us to recover the causal effect of studying certain degree on entrepreneuship activity. Finally, we explore some mechanisms that may help us to explain part of the benefit of attending college on business creation. We study whether partners and owner-managers met in college and whether there are difference by type of firms and degrees.",
         "id": "Progress-One"
     },
