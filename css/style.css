@@ -134,8 +134,19 @@ button.accordion-button:focus{
 .info{
     padding: 0;
     list-style: none;
+}
+.list{
+    margin: 35px;
+}
+a{
+    text-decoration: none;
     color: rgb(13, 13, 119);
 }
+.list-item{
+    font-weight: bold;
+    color: rgb(13, 13, 119);
+}
+
 
 @media (min-width: 0px) and (max-width: 767px){
     header{

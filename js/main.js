@@ -1,6 +1,7 @@
 // OBTENER DATOS
 const accordionPapers = document.getElementById('accordionPanelsStayOpenPapers')
 const accordionProgress = document.getElementById('accordionPanelsStayOpenProgress')
+const listPolicy = document.getElementById('listPolicy')
 
 async function papers(){
     const response = await fetch ('../papers.json')
@@ -46,4 +47,18 @@ progress().then(data =>{
         body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
         item.appendChild(body);
     });
+})
+
+async function policy(){
+    const response = await fetch ('../policy.json')
+    return await response.json()
+}
+
+policy().then(data =>{
+    data.forEach(element =>{
+        let item = document.createElement("li")
+        item.innerHTML = `<a href="${element.link}">${element.title}</a>`
+        item.setAttribute("class", "list-item");
+        listPolicy.appendChild(item)
+    })
 })
