@@ -102,6 +102,7 @@ header{
 }
 .accordion{
     margin: 35px;
+    --bs-accordion-border-color: white;
 }
 .accordion-button{
     font-weight: bold;
@@ -131,6 +132,9 @@ button.accordion-button:focus{
     flex-direction: column;
     justify-content: center;
 }
+i{
+    text-align: center;
+}
 .info{
     padding: 0;
     list-style: none;
@@ -146,7 +150,6 @@ a{
     font-weight: bold;
     color: rgb(13, 13, 119);
 }
-
 
 @media (min-width: 0px) and (max-width: 767px){
     header{

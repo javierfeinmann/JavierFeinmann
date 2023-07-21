@@ -1,21 +1,24 @@
 [
 
     {
-        "title": "How Education Shapes Entrepreneurship (w/ Roberto Hsu and Sebastian Otero)",
+        "title": "How Education Shapes Entrepreneurship",
+        "coauthor": "Joint with Roberto Hsu and Sebastian Otero",
         "subtitle": "Funded by the Stone Center and the Institute for Research on Labor and Employment",
         "text": "In this paper, we combine novel data on the universe of entrepreneurs between 2000 and 2022 with standarized tests, college application and the census of higher education in Brazil. We first document what the majors and students that end up opening a firm. Moreover, we characterize the type of entrepreneurs by differentiating firms based on survival rate and employment creation. To deal with endogeneity problems, we take advantage of the Brazilian unique setting to get admitted to public universities. We use a regression discontinuity approach around the cutoffs of admission for every program, which allows us to recover the causal effect of studying certain degree on entrepreneuship activity. Finally, we explore some mechanisms that may help us to explain part of the benefit of attending college on business creation. We study whether partners and owner-managers met in college and whether there are difference by type of firms and degrees.",
         "id": "Progress-One"
     },
 
     {
-        "title": "Former Coworkers and Startup Performance (w/ Roberto Hsu)",
+        "title": "Former Coworkers and Startup Performance",
+        "coauthor":"Joint with Roberto Hsu",
         "subtitle": "Funded by Institute for Research on Labor and Employment",
         "text": "In this paper, we study whether it is beneficial for startups to hire a known person at the beginning of startups' life. We focus on a particular type of personal connection: workplace connections made by entrepreneurs while they were employees (which we call former coworkers). We create a novel data set from self-collected firm records that track entrepreneurs of all formal businesses in the biggest state of Brazil and match it to matched employer-employee data that covers the universe of formal employment in Brazil. This allows us to building all the necessary pieces for the analysis: tracking entrepreneurs' employment history, creating their network of former coworkers, observing employees in new firms, and tracking their startups' development through time. In order to deal with selection on both entrepreneurs who hire from the networks and former coworkers who accept to work for the entrepreneur, we develope a semi-parametric model where firms decide their set of initial workers from a pool of network and market alternatives, and workers choose whether to join a startup based on their characteristics and employment status. While we answer a very precise question, our theoretical framework is generalizable to all kinds of connections,becoming a contribution in itself.",
         "id": "Progress-Two"
     },
 
     {
-        "title": "The Motherhood Gap in Brazil: The Role of Informal Employment, Entrepreneurship and Maternity Leave (w/ Daniela Paz and Roberto Hsu)",
+        "title": "The Motherhood Gap in Brazil: The Role of Informal Employment, Entrepreneurship and Maternity Leave",
+        "coauthor": "Joint with Daniela Paz and Roberto Hsu",
         "subtitle": "",
         "text": "This projects documents the motherhood gap in formal employment and wages for Brazil by combining data covering about 60% of births and the matched employer-employee from 2003 to 2020. We explore the role of informal employment and self-employment as alternative activities when there is high demand for labor flexbility. Finally, we use a regression discontinuity design on the maternity leave extension to understand how these type of policies affect the motherhood gap and the alternative margin of responses.",
         "id": "Progress-Three"
@@ -24,7 +27,8 @@
 
 
     {
-        "title": "Real and Evasion Responses to Property Taxes: Evidence from Sao Paulo (w/ Thiago Scot and Roberto Hsu)",
+        "title": "Real and Evasion Responses to Property Taxes: Evidence from Sao Paulo",
+        "coauthor": "Joint with Thiago Scot and Roberto Hsu",
         "subtitle": "Funded by Berkeley Opportunity Lab and The World Bank",
         "text": "In this paper, we generate empirical evidence on the real and evasion responses to local property and transaction taxes using granular micro-data from Sao Paulo, the largest city of Brazil. We tackle three main questions: 1) How property taxation/assessments vary across race and gender in a city and what are the drivers of such patterns? 2) What are the consequences of property taxation in terms of labor market, inequality and enterpreneurship? 3) To what extent do we observe tax evasion in property transactions?",
         "id": "Progress-Six"
