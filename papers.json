@@ -9,4 +9,14 @@
         "img": 1,
         "id": "Papers-One"
     }
+
+    {
+        "title": "Social Mobility and Higher Education in Brazil",
+        "coauthor": "Joint with Roberto Hsu",
+        "subtitle": "Funded by the Center of Effective Global Action (CEGA) and the Institute for Research on Labor and Employment (IRLE)",
+        "text": "We follow high school graduates through college and the labor market to study income segregation and intergenerational mobility across colleges in Brazil, a unique context where admissions are mostly determined by exam scores and public institutions are free and of high quality. We show that public college admissions are income neutral once controlling for grades, but elite public colleges are composed mostly of higher-income students, as they have higher exam scores. Intergenerational mobility rates in elite public colleges are low, but higher than in comparable private institutions. We develop a sufficient statistic approach to evaluate how policies aimed at reducing income segregation across colleges impact the future earnings of different groups. We use this general framework to evaluate affirmative action in public colleges and subsidized loans for private institutions. Both policies increased the mobility of low-income students, but subsidized loans have a larger effect. While AA increases the representation of disadvantaged students in elite schools and subsidized loans do not, the latter policy reallocates an overall larger number of students to better college tiers. All the results in the paper are based on data we make publicly available for the first time. It was constructed based on confidential records and aggregated so other colleagues could use it for their research.",
+        "link": "Forthcoming",
+        "id": "Papers-Two"
+    }
+
 ]
