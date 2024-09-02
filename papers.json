@@ -17,8 +17,18 @@
         "text": "We follow high school graduates through college and the labor market to study income segregation and intergenerational mobility across colleges in Brazil, a unique context where admissions are mostly determined by exam scores and public institutions are free and of high quality. We show that public college admissions are income neutral once controlling for grades, but elite public colleges are composed mostly of higher-income students, as they have higher exam scores. Intergenerational mobility rates in elite public colleges are low, but higher than in comparable private institutions. We develop a sufficient statistic approach to evaluate how policies aimed at reducing income segregation across colleges impact the future earnings of different groups. We use this general framework to evaluate affirmative action in public colleges and subsidized loans for private institutions. Both policies increased the mobility of low-income students, but subsidized loans have a larger effect. While AA increases the representation of disadvantaged students in elite schools and subsidized loans do not, the latter policy reallocates an overall larger number of students to better college tiers. All the results in the paper are based on data we make publicly available for the first time. It was constructed based on confidential records and aggregated so other colleagues could use it for their research.",
         "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4702937",
         "slides": "Upon request",
-        "img": 3,
+        "img": 2,
         "id": "Papers-Two"
-    }
+    },
 
+    {
+        "title": "The Role of Cash in Illegal Labor Market Practices: Evidence from Uruguay",
+        "coauthor": "Joint with Maximiliano Lauletta and Marcelo Bergolo",
+        "subtitle": "",
+        "text": "This paper studies the effect of prohibiting the use of cash for wage disbursements on labor markets in developing countries. We study a reform in Uruguay that mandated wage payments to be disbursed using only electronic methods. Using a difference-in-difference approach based on sector-level cash intensity prior to the reform, our results indicate that firms in high cash intensity sectors are significantly more likely to discontinue formal activities post-reform. Active firms show a slight reduction in the number of employees and an increase in repoted wages. These results are driven by low productivity firms. Complementary results using survey data indicate an increase in informal employment and a decrease in collusive underreporting of earnings partially explain these results. Overall, results suggest that, while eliminating cash for wage payments enhances tax compliance among formal workers, it may also shift some economic activity into full informality, offsetting the revenue gains from improved payroll tax compliance.",
+        "link": "https://mlauletta.github.io/mysite/paper_fininc_2.pdf",
+        "slides": "Upon request",
+        "img": 3,
+        "id": "Papers-Three"
+    }
 ]
