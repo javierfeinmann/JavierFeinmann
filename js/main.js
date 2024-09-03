@@ -17,7 +17,7 @@ papers().then(data =>{
         accordionPapers.appendChild(item);
 
         let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body"><div class="row d-flex justify-content-center"><div class="accordion-text"><i>${element.coauthor}</i> \n <div class="text-center"><b> ${element.subtitle}</b><div class="col-xl-4 accordion-img"><img src="../img/${element.img}.jpg" class="img-fluid" alt="img-${element.id}"></div>
+        body.innerHTML = `<div class="accordion-body"><div class="row d-flex justify-content-center"><div class="accordion-text"><i>${element.coauthor}</i> \n <div class="text-center"><b> ${element.subtitle}</b><div class="col-xl-4 accordion-img text-center"><img src="../img/${element.img}.jpg" class="img-fluid" alt="img-${element.id}"></div>
         <p>${element.text} [<a href="${element.link}" target="_blank">Working paper</a>] [<a href="${element.slides}" target="_blank">Slides</a>]</p></div></div></div>`;
         body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
         body.setAttribute("class", "accordion-collapse collapse");
