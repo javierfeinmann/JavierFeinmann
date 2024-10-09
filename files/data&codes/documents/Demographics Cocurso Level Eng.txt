@@ -1,0 +1,15 @@
+Demographics Cocurso Level (ENEM data)
+year: Year of the sample.
+co_ies: University identification code.
+co_curso: Course code within the institution.
+num_stud: Number of students in the course (Subtract -10 from the base).
+pct_gdp_pc_master: Average percentiles of the neighborhoods where the students in the course come from, based on GDP per capita (ENEM).
+nu_nota_mt_master: Course average of the mathematics score in ENEM.
+fem_master: Fraction of women.
+nonwhite_master: Fraction of non-white students.
+father_college_master: Fraction of students whose fathers attended college or higher education.
+mother_college_master: Fraction of students whose mothers attended college or higher education.
+minwage_hh: Fraction of students whose family earns the minimum wage or less.
+idade_master: Average age of the students in the course.
+no_dem: Fraction of the course with no demographic data.
+mis_highschool: No information on the high school of origin.

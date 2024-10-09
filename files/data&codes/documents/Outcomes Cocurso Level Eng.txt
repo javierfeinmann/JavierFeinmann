@@ -1,0 +1,25 @@
+Outcomes Cocurso Level (Entrepreneurship outcomes)
+co_ies: University identification code.
+co_curso: Course code within the institution.
+entrepreneur: Fraction of students in the course who are entrepreneurs.
+below_med_work_entrepreneur: Fraction of students who have opened companies with a number of employees below the national average.
+below_med_wage_entrepreneur: Fraction of students who have opened companies with an average salary below the national average.
+above_med_work_entrepreneur: Fraction of students who have opened companies with a number of employees above the national average.
+above_med_wage_entrepreneur: Fraction of students who have opened companies with an average salary above the national average.
+cnae3_maxmode_entrepreneur: Maximum CNAE group (3 digits) of the course's entrepreneurs.
+cnae3_minmode_entrepreneur: Minimum CNAE group (3 digits) of the course's entrepreneurs.
+cnae5_maxmode_entrepreneur: Maximum CNAE class (5 digits) of the course's entrepreneurs.
+cnae5_minmode_entrepreneur: Minimum CNAE class (5 digits) of the course's entrepreneurs.
+av_wage_act_entrepreneur: Average wage of active employees in the companies entrepreneurs have opened.
+tot_workers_entrepreneur: Average number of employees in the companies entrepreneurs have opened.
+setor_publico_entrepreneur: Fraction of companies opened by entrepreneurs in the public sector.
+setor_privado_entrepreneur: Fraction of companies opened by entrepreneurs in the private sector.
+setor_other_entrepreneur: Fraction of companies opened by entrepreneurs in other sectors (e.g., NGOs).
+num_stud_entrepreneur: Number of students in the course (Subtract -10 from the base).
+tot_workers_curso_entrepreneur: Total number of workers in the companies entrepreneurs have opened.
+tot_wage_act_curso_entrepreneur: Total income of workers in the companies entrepreneurs have opened.
+open_mei: Fraction of students who opened a MEI (Microempreendedor Individual), equivalent to self-employment.
+pj_owner: Fraction of students who are PJ. A "Persona Jurídica" is a legal entity that does not hire employees (e.g., doctors, accountants, lawyers who set up companies to pay fewer taxes).
+employer: Fraction of the course who are employers.
+av_workers_employer: Average number of employees working under the employers in the course.
+av_wages_act_employer: Total income of employees working under the employers in the course.

@@ -1,0 +1,26 @@
+Graduates Rais Cocurso Level (RAIS data)
+co_ies: University identification code.
+co_curso: Course code within the institution.
+num_stud: Number of students in the course (Subtract -10 from the base).
+inrais_employee: Fraction of students found in RAIS.
+inrais_act_employee: Fraction of students with an active contract as of December of that year (active contract indicator = 1).
+wage_nozero_employee: Average income conditional on receiving positive income.
+remdezr_employee: December wage.
+remmedr_employee: Average monthly wage.
+partime_employee: Fraction of students working part-time.
+setor_publico_employee: Fraction of students working in the public sector.
+setor_privado_employee: Fraction of students working in the private sector.
+setor_other_employee: Fraction of students working in other sectors (e.g., NGOs).
+cnae5_minmode_employee: Minimum CNAE class (5 digits) of the course's employees.
+cnae3_minmode_employee: Minimum CNAE group (3 digits) of the course's employees.
+ocup4_minmode_employee: Minimum Occupation code (CBO, 4 digits) of the course's employees.
+ocup2_minmode_employee: Minimum Occupation code (CBO, 2 digits) of the course's employees.
+cnae5_maxmode_employee: Maximum CNAE class (5 digits) of the course's employees.
+cnae3_maxmode_employee: Maximum CNAE group (3 digits) of the course's employees.
+ocup4_maxmode_employee: Maximum Occupation code (CBO, 4 digits) of the course's employees.
+ocup2_maxmode_employee: Maximum Occupation code (CBO, 2 digits) of the course's employees.
+tp_categoria_administrativa: Type of academic organization.
+tp_organizacao_academica: Type of administrative category of the university.
+tp_grau_academico: Academic degree conferred.
+tp_modalidade_ensino: Type of teaching modality.
+co_ocde_area_detalhada: OCDE/UNESCO code of the course.
