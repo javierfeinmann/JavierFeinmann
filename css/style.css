@@ -77,6 +77,9 @@ header{
     font-weight: bold;
     color: black;
 }
+b{
+    text-align: center;
+}
 .img-perfil{
     max-height: 400px;
     max-width: 400px;
