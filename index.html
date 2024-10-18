@@ -37,46 +37,258 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/research.html">Research</a>
+                            <a class="nav-link" href="#research">Research</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/teaching.html">Teaching</a>
+                            <a class="nav-link" href="#teaching">Teaching</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Data & Codes</a>
+                            <a class="nav-link" href="#data">Data & Codes</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container title">
-            <h1 class="title-index">Welcome!</h1>
-        </div>
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-6 img-perfil d-flex">
-                    <img src="img/home/perfil.jpeg" class="img-fluid" alt="img-perfil">
+    <main class="container">
+        <section id="home">
+            <div class="container title">
+                <h1 class="title-index">Welcome!</h1>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-6 img-perfil d-flex">
+                        <img src="img/home/perfil.jpeg" class="img-fluid" alt="img-perfil">
+                    </div>
+                    <div class="col-xl-6 text-index">
+                        <p>I am a PhD Candidate at University of California, Berkeley. I am a Public Finance economist, working on taxation, inequality, and education in developing economies. Prior to coming to Berkeley, I got  my B.A. at Universidad de Buenos Aires and my M.A. at Universidad Torcuato Di Tella </p>
+                        <p><b> I am currently in the Job Market (Fall 2024)!</b> Don't hesitate to contact me if you need further information. </p>
+                        <div>    
+                        <ul class="info">
+                            <li><img src="img/home/email.png" alt="img-adress"> jfeinmann@berkeley.edu</li>
+                            <li><img src="img/home/adress.png" alt="img-adress"> Office 524, Evans Hall, UC Berkeley</li>
+                            <li>
+                                <a href="./files/home/curriculum_JavierFeinmann_extended.pdf" target="_blank">
+                                    <button type="button" class="btn btn-outline-secondary btn-lg cv">CV</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-xl-6 text-index">
-                    <p>I am a PhD Candidate at University of California, Berkeley. I am a Public Finance economist, working on taxation, inequality, and education in developing economies. Prior to coming to Berkeley, I got  my B.A. at Universidad de Buenos Aires and my M.A. at Universidad Torcuato Di Tella </p>
-                    <p><b> I am currently in the Job Market (Fall 2024)!</b> Don't hesitate to contact me if you need further information. </p>
-                    <div>    
-                    <ul class="info">
-                        <li><img src="img/home/email.png" alt="img-adress"> jfeinmann@berkeley.edu</li>
-                        <li><img src="img/home/adress.png" alt="img-adress"> Office 524, Evans Hall, UC Berkeley</li>
+            </div>
+        </section>
+        <section id="research">
+            <div class="container title">
+                <h1 class="titles">Research</h1>
+            </div>
+            <section id="papers">
+                <h3>Working papers</h3>
+                <div class="accordion" id="accordionPanelsStayOpenPapers"></div>
+            </section>
+            <section id="progress">
+                <h3>Selected work in progress</h3>
+                <div class="accordion" id="accordionPanelsStayOpenProgress"></div>
+            </section>
+            <section id="policy">
+                <h3>Policy Report</h3>
+                <ul class="list" id="listPolicy"></ul>
+            </section>
+        </section>
+        <section id="teaching">
+            <div class="container title">
+                <h1 class="titles">Teaching</h1>
+            </div>
+            <section id="graduate">
+                <h3>Graduate Level:</h3>
+                <ul class="list">
+                    <li>
+                        <u>Graduate Student Instructor for FTMBA200S: Data and Decisions (Fall 2023)</u>
+                        <br>Master in Business Administration (MBA) at Berkeley Haas 
+                        <br><a href="https://www.dropbox.com/scl/fi/k3a12dbu6gfv81iobvjhp/syllabus_MBA200S_fallA2023_BG.pdf?rlkey=ezpm40wnx0u8at82289g8cdq4&st=v5u0ww05&dl=0" target="_blank">Syllabus</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="undergraduate">
+                <h3>Undergraduate Level:</h3>
+                <ul class="list">
+                    <li>
+                        <u>Graduate Student Instructor for Statistical Analysis</u>
+                        <br>Bachelor in Economics at Universidad Torcuato Di Tella
+                        <br><a href="https://www.dropbox.com/scl/fi/s05abgb3191pbvue64ari/Programa-2018-Analisis-Estadistico.pdf?rlkey=gdm2fj7wxhajmuigz8ply4ptp&dl=0" target="_blank">Syllabus</a>
+                    </li>
+                    <br>
+                    <li>
+                        <u>Graduate Student Instructor for Impact Evaluation</u>
+                        <br>Bachelor in Economics at Universidad Torcuato Di Tella
+                    </li>
+                    <br>
+                    <li>
+                        <u>Graduate Student Instructor for Macroeconomics</u>
+                        <br>Bachelor in Economics at Universidad Torcuato Di Tella
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section id="data">
+            <div class="container title">
+                <h1 class="titles">Open Data Project</h1>
+            </div>
+            <section>
+                <div class="container">
+                    <h2>Higher Education and Labor Market Outcomes in Brazil</h2>
+                    <p>This project provides open access to class-level data (university × degree) for the entire Brazilian higher education system. We matched data on individuals entering and graduating from college between 2010 and 2015 with labor market outcomes and demographic information, then aggregated it at the class level for public use. To ensure confidentiality, only classes with at least 10 students are included. The outcomes cover formal employment, self-employment, entrepreneurship, and firm ownership. A dictionary with variable descriptions is also available. The following slides show various descriptive plots generated from the data.</p>
+                </div>
+            </section>
+            <section>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <img class="w-100" src="./img/data&codes/education/wages_degree_distribution.PNG" alt="img-1">
+                      </div>
+                      <div class="col">
+                        <img class="w-100" src="./img/data&codes/education/density_wages_controls.png" alt="img-2">
+                      </div>
+            </section>
+            <section>
+                <div class="directory">
+                    <ul>
                         <li>
-                            <a href="./files/home/curriculum_JavierFeinmann_extended.pdf" target="_blank">
-                                <button type="button" class="btn btn-outline-secondary btn-lg cv">CV</button>
-                            </a>
+                            <img class="img-folder" src="../img/data&codes/data.png" alt="img-folder">
+                            <span class="folder">Data</span>
+                            <ul>
+                                <li>
+                                    <img class="img-folder" src="../img/data&codes/graduate.png" alt="img-folder">
+                                    <span class="folder">Graduates</span>
+                                    <ul>
+                                        <li>
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2010.csv" target="_blank">merged_graduates_2010.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2010.dta" target="_blank">merged_graduates_2010.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2011.csv" target="_blank">merged_graduates_2011.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2011.dta" target="_blank">merged_graduates_2011.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2012.csv" target="_blank">merged_graduates_2012.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2012.dta" target="_blank">merged_graduates_2012.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2013.csv" target="_blank">merged_graduates_2013.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2013.dta" target="_blank">merged_graduates_2013.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2014.csv" target="_blank">merged_graduates_2014.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2014.dta" target="_blank">merged_graduates_2014.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2015.csv" target="_blank">merged_graduates_2015.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/graduates/merged_graduates_2015.dta" target="_blank">merged_graduates_2015.dta</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img class="img-folder" src="../img/data&codes/students.png" alt="img-folder">
+                                    <span class="folder">New Students</span>
+                                    <ul>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2010.csv" target="_blank">merged_new_students_2010.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2010.dta" target="_blank">merged_new_students_2010.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2011.csv" target="_blank">merged_new_students_2011.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2011.dta" target="_blank">merged_new_students_2011.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2012.csv" target="_blank">merged_new_students_2012.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2012.dta" target="_blank">merged_new_students_2012.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2013.csv" target="_blank">merged_new_students_2013.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2013.dta" target="_blank">merged_new_students_2013.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2014.csv" target="_blank">merged_new_students_2014.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2014.dta" target="_blank">merged_new_students_2014.dta</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2015.csv" target="_blank">merged_new_students_2015.csv</a>
+                                        </li>
+                                        <li>    
+                                            <a href="../files/data&codes/data/new_students/merged_new_students_2015.dta" target="_blank">merged_new_students_2015.dta</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img class="img-folder" src="../img/data&codes/code.png" alt="img-folder">
+                            <span class="folder">Codes</span>
+                            <ul>
+                                <li>
+                                    <a href="../files/data&codes/codes/merge.R" target="_blank">merge.R</a>
+                                </li>
+                                <li>
+                                    <a href="../files/data&codes/codes/Plots.do" target="_blank">Plots.do</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img class="img-folder" src="../img/data&codes/documents.png" alt="img-folder">
+                            <span class="folder">Documents</span>
+                            <ul>
+                                <li>    
+                                    <a href="../files/data&codes/documents/Classifications.xlsx" target="_blank">Classifications.xlsx</a>
+                                </li>
+                                <li>    
+                                    <a href="../files/data&codes/documents/Demographics Cocurso Level Eng.txt" target="_blank">Demographics Cocurso Level Eng.txt</a>
+                                </li>
+                                <li>    
+                                    <a href="../files/data&codes/documents/Graduates Rais Cocurso Level Eng.txt" target="_blank">Graduates Rais Cocurso Level Eng.txt</a>
+                                </li>
+                                <li>    
+                                    <a href="../files/data&codes/documents/Outcomes Cocurso Level Eng.txt" target="_blank">Outcomes Cocurso Level Eng.txt</a>
+                                </li>
+                                <li>    
+                                    <a href="../files/data&codes/documents/RAIS_vinculos_layoutmicrodados2017.xls" target="_blank">RAIS_vinculos_layoutmicrodados2017.xls</a>
+                                </li>
+                                <li>    
+                                    <a href="../files/data&codes/documents/readme.txt" target="_blank">readme.txt</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-                </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
+    <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
