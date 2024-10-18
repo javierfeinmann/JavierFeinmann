@@ -4,7 +4,7 @@ const accordionProgress = document.getElementById('accordionPanelsStayOpenProgre
 const listPolicy = document.getElementById('listPolicy')
 
 async function papers(){
-    const response = await fetch ('../papers.json')
+    const response = await fetch ('papers.json')
     return await response.json()
 }
 
@@ -26,7 +26,7 @@ papers().then(data =>{
 })
 
 async function progress(){
-    const response = await fetch ('../progress.json')
+    const response = await fetch ('progress.json')
     return await response.json()
 }
 
@@ -49,7 +49,7 @@ progress().then(data =>{
 })
 
 async function policy(){
-    const response = await fetch ('../policy.json')
+    const response = await fetch ('policy.json')
     return await response.json()
 }
 
