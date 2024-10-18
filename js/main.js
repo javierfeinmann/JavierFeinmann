@@ -4,7 +4,7 @@ const accordionProgress = document.getElementById('accordionPanelsStayOpenProgre
 const listPolicy = document.getElementById('listPolicy')
 
 async function papers(){
-    const response = await fetch ('../papers.json')
+    const response = await fetch ('papers.json')
     return await response.json()
 }
 
@@ -17,8 +17,7 @@ papers().then(data =>{
         accordionPapers.appendChild(item);
 
         let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body"><div class="row d-flex justify-content-center"><div class="accordion-text"><i>${element.coauthor}</i>\n<b> ${element.subtitle}</b>\n<b>[<a href="${element.link}" target="_blank">Working paper</a>]</b><div class="col-xl-4 accordion-img text-center"><img src="../img/research/working_papers/${element.img}.jpg" class="img-fluid" alt="img-${element.id}"></div>
-        <p>${element.text}</p></div></div></div>`;
+        body.innerHTML = `<div class="accordion-body"><div class="row accordion-content"><div class="col-sm-4 d-flex justify-content-center"><img id="accordion-img" src="./img/research/working_papers/${element.img}.jpg" alt="img-${element.id}"></div><div class="col-sm-8 accordion-text"><i>${element.coauthor}</i><b> ${element.subtitle}</b><b>[<a href="${element.link}" target="_blank">Working paper</a>]</b><p>${element.text}</p></div></div></div></div>`;
         body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
         body.setAttribute("class", "accordion-collapse collapse");
         body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
@@ -27,7 +26,7 @@ papers().then(data =>{
 })
 
 async function progress(){
-    const response = await fetch ('../progress.json')
+    const response = await fetch ('progress.json')
     return await response.json()
 }
 
@@ -50,7 +49,7 @@ progress().then(data =>{
 })
 
 async function policy(){
-    const response = await fetch ('../policy.json')
+    const response = await fetch ('policy.json')
     return await response.json()
 }
 
@@ -62,3 +61,15 @@ policy().then(data =>{
         listPolicy.appendChild(item)
     })
 })
+
+/* data */
+
+
+document.querySelectorAll('.folder').forEach(folder => {
+    folder.addEventListener('click', function() {
+        const subMenu = this.nextElementSibling;
+        if (subMenu) {
+            subMenu.classList.toggle('show');
+        }
+    });
+});
