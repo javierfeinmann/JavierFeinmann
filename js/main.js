@@ -39,7 +39,7 @@ progress().then(data =>{
         accordionProgress.appendChild(item);
 
         let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body accordion-text"><i>${element.coauthor}</i>\n<i>${element.subtitle}</i>\n<b>[<a href="${element.slides}" target="_blank">Slides</a>]</b>
+        body.innerHTML = `<div class="accordion-body accordion-text"><i>${element.coauthor}</i>\n<b>${element.subtitle}</b>\n<b><a href="${element.slides}" target="_blank">${element.type}</a></b>
         <p>${element.text}</p></div>`;
         body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
         body.setAttribute("class", "accordion-collapse collapse");
