@@ -11,7 +11,7 @@
 
     {
         "title": "Social Mobility and Higher Education in Brazil",
-        "coauthor": "Joint with Roberto Hsu",
+        "coauthor": "Joint with Roberto Hsu Rocha",
         "subtitle": "Funded by the Center of Effective Global Action and the Institute for Research on Labor and Employment",
         "text": "We follow high school graduates through college and the labor market to study income segregation and intergenerational mobility across colleges in Brazil, a unique context where admissions are mostly determined by exam scores and public institutions are free and of high quality. We show that public college admissions are income neutral once controlling for grades, but elite public colleges are composed mostly of higher-income students, as they have higher exam scores. Intergenerational mobility rates in elite public colleges are low, but higher than in comparable private institutions. We develop a sufficient statistic approach to evaluate how policies aimed at reducing income segregation across colleges impact the future earnings of different groups. We use this general framework to evaluate affirmative action in public colleges and subsidized loans for private institutions. Both policies increased the mobility of low-income students, but subsidized loans have a larger effect. While AA increases the representation of disadvantaged students in elite schools and subsidized loans do not, the latter policy reallocates an overall larger number of students to better college tiers. All the results in the paper are based on data we make publicly available for the first time. It was constructed based on confidential records and aggregated so other colleagues could use it for their research.",
         "link": "./files/research/working_papers/Social_Mobility_Higher_Education_Brazil_draft.pdf",
@@ -22,7 +22,7 @@
     {
         "title": "The Role of Cash in Illegal Labor Market Practices: Evidence from Uruguay",
         "coauthor": "Joint with Maximiliano Lauletta and Marcelo Bergolo",
-        "subtitle": " ",
+        "subtitle": "New!",
         "text": "This paper studies the effect of prohibiting the use of cash for wage disbursements on labor markets in developing countries. We study a reform in Uruguay that mandated wage payments to be disbursed using only electronic methods. Using a difference-in-difference approach based on sector-level cash intensity prior to the reform, our results indicate that firms in high cash intensity sectors are significantly more likely to discontinue formal activities post-reform. Active firms show a slight reduction in the number of employees and an increase in repoted wages. These results are driven by low productivity firms. Complementary results using survey data indicate an increase in informal employment and a decrease in collusive underreporting of earnings partially explain these results. Overall, results suggest that, while eliminating cash for wage payments enhances tax compliance among formal workers, it may also shift some economic activity into full informality, offsetting the revenue gains from improved payroll tax compliance.",
         "link": "https://mlauletta.github.io/mysite/paper_fininc_2.pdf",
         "img": 3,
@@ -31,10 +31,10 @@
 
     {
         "title": "The Effects of Revealing Borrowers Information on Credit Allocation, Defaults and Entrepreneurship",
-        "coauthor": "Joint with Roberto Hsu, Mariana Mercucci and Josival Leite",
-        "subtitle": "Draft coming soon!",
+        "coauthor": "Joint with Roberto Hsu Rocha (JMP), Mariana Mercucci and Josival Leite",
+        "subtitle": "New!",
         "text": "This paper investigates the effects of increasing the information that lenders have about borrowers on their credit access, default rates, and entrepreneurial activity. Partnering with the largest credit bureau in Brazil, we explore a unique policy that increased the information available for credit bureaus to construct credit scores. Changes in the credit allocation are consistent with a simple conceptual framework of decision-making under imperfect information that rationalizes how new credit scores built with more information should affect credit allocation. This includes not only increasing credit for those who are suggested to be more creditworthy given the new information but also reflects the increase in the precision of the signal, widening the credit distribution. We show that credit allocated by the policy has substantially lower default rates than the counterfactual credit without the policy, but reallocation increased credit inequality, also causing an increase in the racial gap in credit access. We then explore effects beyond the credit market by investigating if the policy affected entrepreneurial activity. We find no effect on firm creation but evidence of better (worse) outcomes of firms created by positively (negatively) exposed individuals. These effects translate into an improvement in the average firm quality of new cohorts of entrepreneurs, suggesting productivity gains from the reallocation of credit.",
-        "link": "",
+        "link": "./files/research/working_papers/cadastro_positivo_draft.pdf",
         "img": 4,
         "id": "Papers-Four"
     }
