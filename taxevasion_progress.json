@@ -6,10 +6,9 @@
         "text": "This project extends the work of Feinmann et al (2023) to document payments under the table for formal employees in other Latin American countries. At the moment, we included Argentina, Brazil, Chile, Colombia, Mexico, and Peru. We find a simple average of 15% of employees who admit to receiving PUTs for about 23% of their wages. This average masks significant heterogeneity, where Argentina has more than a quarter of formal employees receiving PUTs, while this number is less than 4% in Chile. Importantly, PUTs are sharply increasing in wages, with employees in the top wage group doubling the underreporting sharing of low-wage employees. This patterns holds for both the extensive and intensive margin, and for five out of the six countries surveyed. Despite the fact that wages and firm size are positively correlated, PUTs are strongly decreasing on firm size, measured by number of employees. However, a considerable share of employees in firms with more than 500 employees admits to receiving PUTs. Consistent across all countries, employees holding managerial positions and with frequent interaction with owners are significantly more likely to receive PUTs, even after controlling by wages and firm size. We also show that employees with less tax morale are more likely to report receiving PUTs. We provide evidence that cash, bank transfer and virtual payments are the main disbursement methods for PUTs, but with significant heterogeneity across income groups. High-wage employees are more likely to use bank transfers and virtual payments, and less likely to use cash. Finally, we also explore what regulations or taxes help to determine the amount PUT. We find that the minimum wage, social security contributions, payroll taxes, and income taxes ranked at the top. Income taxes and social security contributions are relatively more important for high-wage earners, compared to the minimum wage or extra hours, which are more relevant for low-wage employees. The end of the presentation lists the project's next steps.",
         "type": "[Slides]",
         "slides":"./files/research/work_in_progress/PUT_latam_slides.pdf",
+        "img": "",
         "id": "Progress-One"
     },
-
-   
     {
         "title": "Heterogeneous Responses in Payments Under the Table: Experimental Evidence from the Dominican Republic <i> - AEA registration plan available </i>",
         "coauthor": "Joint with Marvin Cardoza",
@@ -19,18 +18,6 @@
         "slides":"./files/research/work_in_progress/PUT_experiment_registrationplan.pdf",
         "id": "Progress-Two"
     },
-    
-    {
-        "title": "How Does Education Shape Entrepreneurship? <i> - Preliminary results upon request </i>",
-        "coauthor": "Joint with Roberto Hsu and Sebastian Otero",
-        "subtitle": "Funded by the Stone Center and the Institute for Research on Labor and Employment",
-        "text": "In this paper, we combine novel data on the universe of entrepreneurs between 2010 and 2023 with standarized tests, college application and the census of higher education in Brazil. We first discuss what does it mean to be good entrepreneur, and we develop several measures that allows us to pin down the link between college education and good entrepreneurship. On top of characterizing how different college degrees are correlated with entrepreneurial activity, we estimate causal effects using a regression discontinuity design which exploits the centralized admission system to public universities in Brazil. We adapt the IV VAM to inform policymakers not only whether investment in a specific degree promotes entrepreneurship, but also how these estimates compare across degrees, by holding outside options constant. Third, we test whether the effects on entrepreneurship are associated to social mobility or they are mostly concentrated on students with advantageous socio-economic backgrounds. Finally, we explore the role of peers on explaining the causal estimates, by testing differential slopes in the network's benefits across degrees",
-        "type": "",
-        "slides":"",
-        "id": "Progress-Three"
-    },
-
-
     {
         "title": "Real and Evasion Responses to Property Taxes: Evidence from Sao Paulo <i> - Preliminary results upon request </i>",
         "coauthor": "Joint with Thiago Scot, Roberto Hsu, and Davi Moura ",
@@ -40,5 +27,5 @@
         "slides":"",
         "id": "Progress-Four"
     }
-
+    
 ]

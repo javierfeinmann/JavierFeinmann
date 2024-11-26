@@ -71,7 +71,18 @@ header{
     font-weight: bold;
     color: black;
 }
-
+.subtitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+.subtitles{
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
 .title-index{
     font-size: 50px;
     font-family: 'Aboreto', cursive;
@@ -104,8 +115,13 @@ b{
     margin-top: 15px;
     width: 100%;
 }
+.policy-title{
+    margin-top: 50px;
+    font-weight: bold;
+
+}
 .accordion{
-    margin: 35px;
+    margin: 20px;
     --bs-accordion-border-color: white;
 }
 .accordion-button{
@@ -160,6 +176,7 @@ i{
 }
 .list{
     margin: 35px;
+    margin-top: 20px;
 }
 a{
     text-decoration: none;
