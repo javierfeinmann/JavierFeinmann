@@ -26,6 +26,15 @@
         "type": "",
         "slides":"",
         "id": "Progress-Four"
+    },
+    {
+        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
+        "coauthor": "Permanent research team: Gabriel Zucman, Pierre Bachas, Thiago Scot, Javier Feinmann, and Theo Ribas",
+        "subtitle": "European Tax Observatory and Receita Federal do Brasil",
+        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
+        "type": "",
+        "slides":"",
+        "id": "Progress-Five"
     }
     
 ]
