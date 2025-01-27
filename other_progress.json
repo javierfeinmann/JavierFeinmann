@@ -6,7 +6,7 @@
         "text": "In this paper, we combine novel data on the universe of entrepreneurs between 2010 and 2023 with standarized tests, college application and the census of higher education in Brazil. We first discuss what does it mean to be good entrepreneur, and we develop several measures that allows us to pin down the link between college education and good entrepreneurship. On top of characterizing how different college degrees are correlated with entrepreneurial activity, we estimate causal effects using a regression discontinuity design which exploits the centralized admission system to public universities in Brazil. We adapt the IV VAM to inform policymakers not only whether investment in a specific degree promotes entrepreneurship, but also how these estimates compare across degrees, by holding outside options constant. Third, we test whether the effects on entrepreneurship are associated to social mobility or they are mostly concentrated on students with advantageous socio-economic backgrounds. Finally, we explore the role of peers on explaining the causal estimates, by testing differential slopes in the network's benefits across degrees",
         "type": "",
         "slides":"",
-        "id": "Progress-Three"
+        "id": "Progress-One"
     },
     {
         "title": "Demand Shock on Trial: Who Bears the Consequences? <i> - Preliminary results upon request </i>",
@@ -15,6 +15,6 @@
         "text": "When a large, unexpected labor demand shock hits, who bears the consequences? We study this question in the context of a high-skill labor market: lawyers. In 2017, a Brazilian labor reform raised the legal fees workers expect to pay when suing their employers in labor courts. As a result, labor lawsuits decreased by 40% within a year, dramatically reducing the demand for labor lawyers. Using lawyers from unaffected practice areas as a control group, we investigate how this sudden demand shock impacts the labor market trajectories of labor lawyers. Of particular interest are the distributional effects across gender, race, wage and experience, in the short and long run. Combining microdata on both labor and non-labor lawsuits, as well as employer-employee and business ownership records, we are able to trace out individual-level labor market outcomes, including occupation changes, over 10 years. Our findings establish an important benchmark in light of the rise of AI, the first technological change that has the potential to similarly disrupt high-skill labor markets.",
         "type": "",
         "slides":"",
-        "id": "Progress-Three"
+        "id": "Progress-Two"
     }    
 ]
