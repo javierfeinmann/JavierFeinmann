@@ -7,14 +7,5 @@
         "type": "",
         "slides":"",
         "id": "Progress-One"
-    },
-    {
-        "title": "Demand Shock on Trial: Who Bears the Consequences? <i> - Preliminary results upon request </i>",
-        "coauthor": "Joint with Nina Roussille and Roberto Hsu Rocha",
-        "subtitle": "New!",
-        "text": "When a large, unexpected labor demand shock hits, who bears the consequences? We study this question in the context of a high-skill labor market: lawyers. In 2017, a Brazilian labor reform raised the legal fees workers expect to pay when suing their employers in labor courts. As a result, labor lawsuits decreased by 40% within a year, dramatically reducing the demand for labor lawyers. Using lawyers from unaffected practice areas as a control group, we investigate how this sudden demand shock impacts the labor market trajectories of labor lawyers. Of particular interest are the distributional effects across gender, race, wage and experience, in the short and long run. Combining microdata on both labor and non-labor lawsuits, as well as employer-employee and business ownership records, we are able to trace out individual-level labor market outcomes, including occupation changes, over 10 years. Our findings establish an important benchmark in light of the rise of AI, the first technological change that has the potential to similarly disrupt high-skill labor markets.",
-        "type": "",
-        "slides":"",
-        "id": "Progress-Three"
-    }    
+    }
 ]
