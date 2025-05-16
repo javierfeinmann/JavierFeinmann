@@ -1,5 +1,32 @@
 [
     {
+        "title": "Heterogeneous Responses in Payments Under the Table: Experimental Evidence from the Dominican Republic <i> - Draft coming soon </i> ",
+        "coauthor": "Joint with Marvin Cardoza, Joaquin Herrera and Roberto Hsu Rocha",
+        "subtitle": "Funded by Structural Transformation and Economic Growth Center (STEG)",
+        "text": "In this paper, we conduct a randomized controlled trial (RCT) in collaboration with the Dominican Republic Tax Authority to evaluate the impact of various deterrence messages on the underreporting of formal employees’ wages—referred to as Payments Under the Table (PUT)—and on informal employment across 67,570 firms, comprising the universe of registered establishment in the country. We introduce novel variations in the role of labor courts in curbing illegal labor market practices. In the first treatment arm, we increase employers’ perceived likelihood of being sued by their employees (awareness effect). The second treatment arm informs employers that the tax authority may use labor lawsuits as triggers for tax audits, emphasizing the potential spillover effects of individual lawsuits (propagation effect). A third treatment arm introduces an intervention focused on profits rather than payroll misreporting, testing a distinct set of predictions. Uniquely within the literature on randomized deterrence messages, we also assess worker-level responses, allowing us to examine heterogeneous effects based on factors such as minimum wage regulations, income tax thresholds, and variations in bargaining power.",
+        "type": "[AEA Registration Plan]",
+        "slides":"./files/research/work_in_progress/PUT_experiment_registrationplan.pdf",
+        "id": "Progress-One"
+    },
+    {
+        "title": "Survivors Pension: Labor Supply and Optimal Insurance <i> - Draft coming soon </i>",
+        "coauthor": "Roberto Hsu Rocha",
+        "subtitle": "New!",
+        "text": "While nearly all governments provide survivorship pensions to widows, countries differ widely in both the coverage and generosity of these programs. Optimal policy design hinges on two key parameters: the value individuals place on insurance against widowhood and their labor supply responses to benefit receipt. This paper estimates these parameters using rich administrative data from Brazil, which has the most generous survivorship pension system in the world. Leveraging quasi-experimental variation in the timing of widowhood and in benefit generosity, we find that a 1% increase in pension benefits reduces labor supply by 0.29%. In the absence of benefits, the labor supply response to widowhood ranges from 0.01 to 0.10, consistent with prior evidence. These responses hold across a broad set of labor market outcomes beyond formal employment, suggesting limited substitution across activities. Finally, we show that key elasticities vary with observable characteristics, such as pre-widowhood earnings. We use this heterogeneity to quantify the welfare gains from tailoring survivor benefits to individual profiles.",
+        "type": "",
+        "slides":"",
+        "id": "Progress-Two"
+    },
+     {
+        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
+        "coauthor": "Permanent research team: Gabriel Zucman, Pierre Bachas, Thiago Scot, Javier Feinmann, and Theo Ribas",
+        "subtitle": "European Tax Observatory and Receita Federal do Brasil",
+        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
+        "type": "",
+        "slides":"",
+        "id": "Progress-Three"
+    },
+    {
         "title": "Payments Under the Table in Latin America <i> - Slides available </i>",
         "coauthor":"Joint with Pablo Garriga, Maximiliano Lauletta, Ana Paula Franco, Roberto Hsu, and Nathalie Gonzalez Prieto",
         "subtitle": "Funded by the World Bank",
@@ -7,42 +34,6 @@
         "type": "[Slides]",
         "slides":"./files/research/work_in_progress/PUT_latam_slides.pdf",
         "img": "",
-        "id": "Progress-One"
-    },
-    {
-        "title": "Heterogeneous Responses in Payments Under the Table: Experimental Evidence from the Dominican Republic <i> - AEA registration plan available </i>",
-        "coauthor": "Joint with Marvin Cardoza",
-        "subtitle": "Funded by Structural Transformation and Economic Growth Center (STEG)",
-        "text": "In this paper, we conduct a randomized controlled trial (RCT) in collaboration with the Dominican Republic Tax Authority to evaluate the impact of various deterrence messages on the underreporting of formal employees’ wages—referred to as Payments Under the Table (PUT)—and on informal employment across 67,570 firms, comprising the universe of registered establishment in the country. We introduce novel variations in the role of labor courts in curbing illegal labor market practices. In the first treatment arm, we increase employers’ perceived likelihood of being sued by their employees (awareness effect). The second treatment arm informs employers that the tax authority may use labor lawsuits as triggers for tax audits, emphasizing the potential spillover effects of individual lawsuits (propagation effect). A third treatment arm introduces an intervention focused on profits rather than payroll misreporting, testing a distinct set of predictions. Uniquely within the literature on randomized deterrence messages, we also assess worker-level responses, allowing us to examine heterogeneous effects based on factors such as minimum wage regulations, income tax thresholds, and variations in bargaining power.",
-        "type": "[AEA Registration Plan]",
-        "slides":"./files/research/work_in_progress/PUT_experiment_registrationplan.pdf",
-        "id": "Progress-Two"
-    },
-    {
-        "title": "Real and Evasion Responses to Property Taxes: Evidence from Sao Paulo <i> - Preliminary results upon request </i>",
-        "coauthor": "Joint with Thiago Scot, Roberto Hsu, and Davi Moura ",
-        "subtitle": "Funded by Berkeley Opportunity Lab and The World Bank",
-        "text": "In this paper we study behavioral responses to property transactions taxes in Sao Paulo, the largest municipality in Brazil. The tax base for the property transaction tax is the maximum between the reported price and the assessed value by the government. We first document massive collusive under-reporting of reported prices between buyer and seller. In this setting, both have incentives to under-report because the former must pay the property transaction tax, while the seller must pay capital gain taxes. We find bunching at the exact same value as the assessed value by the government, accounting for more than 10% of all transactions. However, this pattern fully disappears when the transaction is financed through a loan, where a bank representative must verify the transaction price. The bunching masks the response to the property transaction tax and the effect of the assessed value as a reference point for under-reporting. We leverage variation in the size of the property transaction tax, which changed from 2% to 3% in 2015, to disentangle the relative contribution of these two margins.  ",
-        "type": "",
-        "slides":"",
-        "id": "Progress-Three"
-    },
-    {
-        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
-        "coauthor": "Permanent research team: Gabriel Zucman, Pierre Bachas, Thiago Scot, Javier Feinmann, and Theo Ribas",
-        "subtitle": "European Tax Observatory and Receita Federal do Brasil",
-        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
-        "type": "",
-        "slides":"",
         "id": "Progress-Four"
-    },
-    {
-        "title": "How Does Education Shape Entrepreneurship? <i> - Preliminary results upon request </i>",
-        "coauthor": "Joint with Roberto Hsu and Sebastian Otero",
-        "subtitle": "Funded by the Stone Center and the Institute for Research on Labor and Employment",
-        "text": "In this paper, we combine novel data on the universe of entrepreneurs between 2010 and 2023 with standarized tests, college application and the census of higher education in Brazil. We first discuss what does it mean to be good entrepreneur, and we develop several measures that allows us to pin down the link between college education and good entrepreneurship. On top of characterizing how different college degrees are correlated with entrepreneurial activity, we estimate causal effects using a regression discontinuity design which exploits the centralized admission system to public universities in Brazil. We adapt the IV VAM to inform policymakers not only whether investment in a specific degree promotes entrepreneurship, but also how these estimates compare across degrees, by holding outside options constant. Third, we test whether the effects on entrepreneurship are associated to social mobility or they are mostly concentrated on students with advantageous socio-economic backgrounds. Finally, we explore the role of peers on explaining the causal estimates, by testing differential slopes in the network's benefits across degrees",
-        "type": "",
-        "slides":"",
-        "id": "Progress-Five"
     }
 ]
