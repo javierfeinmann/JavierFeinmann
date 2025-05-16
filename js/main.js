@@ -6,7 +6,7 @@ const accordionOtherProgress = document.getElementById('accordionPanelsStayOpenO
 const listPolicy = document.getElementById('listPolicy')
 
 async function papers(){
-    const response = await fetch ('taxevasion_wp.json')
+    const response = await fetch ('wp.json')
     return await response.json()
 }
 
@@ -28,7 +28,7 @@ papers().then(data =>{
 })
 
 async function progress(){
-    const response = await fetch ('taxevasion_progress.json')
+    const response = await fetch ('progress.json')
     return await response.json()
 }
 
@@ -49,52 +49,6 @@ progress().then(data =>{
         item.appendChild(body);
     });
 })
-
-async function other_papers(){
-    const response = await fetch ('other_wp.json')
-    return await response.json()
-}
-
-other_papers().then(data =>{
-    data.forEach(element => {
-        let item = document.createElement("div");
-        item.innerHTML = `<h2 class="accordion-header" id="panelsStayOpen-heading${element.id}">
-        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title}</button></h2>`;
-        item.setAttribute("class", "accordion-item");
-        accordionOtherPapers.appendChild(item);
-
-        let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body"><div class="row accordion-content"><div class="col-sm-4 d-flex justify-content-center"><img id="accordion-img" src="./img/research/working_papers/${element.img}.jpg" alt="img-${element.id}"></div><div class="col-sm-8 accordion-text"><i>${element.coauthor}</i><b> ${element.subtitle}</b><b>[<a href="${element.link}" target="_blank">Working paper</a>]</b><p>${element.text}</p></div></div></div></div>`;
-        body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
-        body.setAttribute("class", "accordion-collapse collapse");
-        body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
-        item.appendChild(body);
-    });
-})
-
-async function other_progress(){
-    const response = await fetch ('other_progress.json')
-    return await response.json()
-}
-
-other_progress().then(data =>{
-    data.forEach(element => {
-        let item = document.createElement("div");
-        item.innerHTML = `<h2 class="accordion-header" id="panelsStayOpen-heading${element.id}">
-        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title}</button></h2>`;
-        item.setAttribute("class", "accordion-item");
-        accordionOtherProgress.appendChild(item);
-
-        let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body accordion-text"><i>${element.coauthor}</i>\n<b>${element.subtitle}</b>\n<b><a href="${element.slides}" target="_blank">${element.type}</a></b>
-        <p>${element.text}</p></div>`;
-        body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
-        body.setAttribute("class", "accordion-collapse collapse");
-        body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
-        item.appendChild(body);
-    });
-})
-
 
 async function policy(){
     const response = await fetch ('policy.json')
