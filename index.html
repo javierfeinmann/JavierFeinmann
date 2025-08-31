@@ -24,7 +24,6 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark">
-            <div></div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="/JavierFeinmann/">Javier Feinmann</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,22 +55,25 @@
                     <div class="col-xl-6 img-perfil d-flex">
                         <picture>
                             <source srcset="img/home/perfil.webp" type="image/webp">
-                            <img src="img/home/perfil.jpg" class="img-fluid" alt="Portrait of Javier Feinmann" loading="lazy">
-                        </picture>
+                            <img src="img/home/perfil.jpg"
+                                class="img-fluid"
+                                alt="Portrait of Javier Feinmann"
+                                loading="lazy"
+                                width="400" height="400">  <!-- or use CSS: aspect-ratio: 1 / 1; -->                        </picture>
                     </div>
                     <div class="col-xl-6 text-index">
                         <p>I am a Public Finance economist, working on taxation, inequality, and education. I work as a Postdoctoral Research Fellow at the Paris School of Economics. I have earned my Ph.D. in Economics from UC Berkeley, my M.A. from Universidad Torcuato Di Tella, and my B.A. from Universidad de Buenos Aires </p>
                         <div>    
                         <ul class="info">
-                            <li><img src="img/home/email.png" alt="img-adress"> jfeinmann@berkeley.edu</li>
-                            <li><img src="img/home/adress.png" alt="img-adress"> Office R4-14, PSE, ENS Campus Jordan </li>
-                            <li>
-                                <a href="./files/home/curriculum_JavierFeinmann_extended.pdf" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" class="btn btn-outline-secondary btn-lg cv">CV</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <img src="img/home/email.png" alt="" aria-hidden="true">
+                            <a href="mailto:jfeinmann@berkeley.edu">jfeinmann@berkeley.edu</a>
+                        </li>
+                        <li>
+                            <img src="img/home/adress.png" alt="" aria-hidden="true">
+                            <span class="visually-hidden">Office: </span>Office R4-14, PSE, ENS Campus Jordan
+                        </li>
+                        </ul>                    </div>
                     </div>
                 </div>
             </div>
@@ -147,6 +149,8 @@
                       <div class="col">
                         <img class="w-100" src="./img/data&codes/education/density_wages_controls.png" alt="img-2">
                       </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <div class="directory">

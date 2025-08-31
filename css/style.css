@@ -265,9 +265,7 @@ ul.show {
   margin-top: 4px;
 }
 
-.text-index, .accordion-text p, p { 
-    text-align: left; 
-}
+#home .text-index > p { text-align: left; }
 
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 84px; } /* height of your navbar */
