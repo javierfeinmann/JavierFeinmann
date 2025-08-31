@@ -14,7 +14,27 @@
         "img": 1,
         "id": "Papers-One",
         "text": "We study formal workers who receive part of their salary <i>off the books</i>, which we refer to as ''payments under the table'' (PUTs). First, we present findings from an original representative survey of formal workers in Brazil to document novel empirical facts about the scope and economic significance of PUTs. A quarter of formal employees admit to receiving PUTs for about 20% of their wages, with higher-wage workers evading a larger share of their total wages. This translates into significant revenue losses for the government, totaling 4.7% of labor income taxes. Second, we develop a stylized model to illuminate how the incentives of both employers and workers influence PUTs. Lastly, leveraging rich administrative data and several complementary research designs, we provide empirical evidence on how these incentives drive changes in PUTs from both sides of the collusion. On the employer side, we use novel data on PUT-related labor lawsuits matched to employer-employee records to show that employers increase the reported wages of other employees in the firm by 1% in response to a PUT-related lawsuit. We show these effects are driven by higher lawsuit risk. On the employee side, we document bunching in reported wages just below the social security ceiling. Below the ceiling, additional reporting increases pension benefits, making PUTs costlier, while above the ceiling, these benefits max out. This indicates employers adjust PUTs to align with the employees' benefit threshold. Overall, these findings challenge existing assumptions about the effectiveness of third-party reporting and underscore the need for tailored policy tools to address tax evasion in developing countries."
-    },   
+    },
+    
+    {
+        "title": "Tax Progressivity and Inequality in Brazil: Evidence from Integrated Administrative Data",
+        "coauthors": [
+            { "name": "Theo Palomo", "url": "https://sites.google.com/view/theopalomo/" },
+            { "name": "Davi Bhering", "url": ""},
+            { "name": "Thiago Scot", "url": "https://sites.google.com/view/thiagoscot/"},
+            { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
+            { "name": "Luciana Barcarolo", "url": ""},
+            { "name": "Celso Campos", "url": ""},          
+            { "name": "Leonardo Moreira", "url": ""},          
+            { "name": "Gabriel Zucman", "url": "https://gabriel-zucman.eu/"}         
+      ],
+        "subtitle": "New!",
+        "link": "https://www.taxobservatory.eu//www-site/uploads/2025/08/Tax-Progressivity-and-Inequality-in-Brazil-Evidence-from-Integrated-Administrative-Data.pdf",
+        "img": 5,
+        "id": "Papers-Five",
+        "text": "We use population-wide administrative micro-data to provide new estimates of income inequality and effective tax rates by income groups in Brazil, capturing all income and all tax payments. Our data allow us to link businesses to their owners and thus to allocate business income and associated taxes to the corresponding individual firm owners. We provide sharp upward revisions to official inequality estimates: the top 1% earns 27.4% of total income in 2019, one of the highest level recorded in the world. The tax system, which relies heavily on consumption taxes, is regressive: while the average tax rate in the economy is 42.5%, this rate falls to 20.6% for million-dollar earners (roughly the top 0.01% of the distribution), due to the non-taxation of dividends and provisions that reduce corporate tax liabilities. We provide evidence suggesting that inequality in developing countries may be systematically underestimated, as even in Brazil—where dividends are untaxed, and hence incentives to retain income within companies are limited—attributing profits to business owners substantially raises income inequality."
+    },
+
     {
         "title": "Social Mobility and Higher Education in Brazil",
         "coauthors": [
