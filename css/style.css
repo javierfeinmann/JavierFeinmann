@@ -60,9 +60,9 @@ header{
 }
 .title{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    padding: 15px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    padding: 6px 0;
     border-top: 8px solid rgba(0, 0, 12, 0.307);
     border-bottom: 8px solid rgba(0, 0, 12, 0.307);
 }
@@ -70,7 +70,8 @@ header{
     font-size: 32px;
     font-weight: bold;
     color: black;
-    margin: 1.5rem 0 .75rem;
+    margin: 0.25rem 0rem;
+    line-height: 1.15;
 }
 .subtitle{
     font-size: 22px;
@@ -148,8 +149,6 @@ button.accordion-button:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.accordion-text p{
     font-size: small;
     line-height: 1.6;
 }
@@ -163,7 +162,7 @@ button.accordion-button:focus{
   .accordion-content #accordion-img {
     max-height: 300px;
     width: auto;
-    margin: 15px;
+    margin: 13px;
     box-shadow: 4px 4px 4px #333333;
 }
 
