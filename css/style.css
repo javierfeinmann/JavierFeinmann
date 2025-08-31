@@ -136,7 +136,10 @@ button.accordion-button:focus{
     background-color: rgb(3, 3, 67);
     color: white;
 }
-#accordion-img img{
+.accordion-img{
+    max-height: 300px;
+    width: auto;
+    margin: 15px;
     box-shadow: 4px 4px 4px #333333;
 }
 .accordion-text{

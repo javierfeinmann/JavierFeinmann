@@ -1,77 +1,114 @@
-// OBTENER DATOS
-const accordionPapers = document.getElementById('accordionPanelsStayOpenPapers')
-const accordionProgress = document.getElementById('accordionPanelsStayOpenProgress')
-const accordionOtherPapers = document.getElementById('accordionPanelsStayOpenOtherPapers')
-const accordionOtherProgress = document.getElementById('accordionPanelsStayOpenOtherProgress')
-const listPolicy = document.getElementById('listPolicy')
+// === Grabs ===
+const accordionPapers   = document.getElementById('accordionPanelsStayOpenPapers');
+const accordionProgress = document.getElementById('accordionPanelsStayOpenProgress');
+const listPolicy        = document.getElementById('listPolicy');
 
-async function papers(){
-    const response = await fetch ('wp.json')
-    return await response.json()
-}
+// === Helpers ===
+const fetchJSON = (url) => fetch(url).then(r => r.json());
 
-papers().then(data =>{
-    data.forEach(element => {
-        let item = document.createElement("div");
-        item.innerHTML = `<h2 class="accordion-header" id="panelsStayOpen-heading${element.id}">
-        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title}</button></h2>`;
-        item.setAttribute("class", "accordion-item");
-        accordionPapers.appendChild(item);
+// === Working Papers ===
+fetchJSON('wp.json').then(data => {
+  data.forEach(element => {
+    // Wrapper item
+    const item = document.createElement('div');
+    item.className = 'accordion-item';
 
-        let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body"><div class="row accordion-content"><div class="col-sm-4 d-flex justify-content-center"><img id="accordion-img" src="./img/research/working_papers/${element.img}.jpg" alt="img-${element.id}"></div><div class="col-sm-8 accordion-text"><i>${element.coauthor}</i><b> ${element.subtitle}</b><b>[<a href="${element.link}" target="_blank">Working paper</a>]</b><p>${element.text}</p></div></div></div></div>`;
-        body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
-        body.setAttribute("class", "accordion-collapse collapse");
-        body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
-        item.appendChild(body);
-    });
-})
+    // Header
+    const headingId = `panelsStayOpen-heading-${element.id}`;
+    const collapseId = `panelsStayOpen-collapse-${element.id}`;
 
-async function progress(){
-    const response = await fetch ('progress.json')
-    return await response.json()
-}
+    item.innerHTML = `
+      <h2 class="accordion-header" id="${headingId}">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#${collapseId}"
+                aria-expanded="false"
+                aria-controls="${collapseId}">
+          ${element.title}
+        </button>
+      </h2>
+    `;
 
-progress().then(data =>{
-    data.forEach(element => {
-        let item = document.createElement("div");
-        item.innerHTML = `<h2 class="accordion-header" id="panelsStayOpen-heading${element.id}">
-        <button class = "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${element.id}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${element.id}">${element.title}</button></h2>`;
-        item.setAttribute("class", "accordion-item");
-        accordionProgress.appendChild(item);
+    // Body
+    const body = document.createElement('div');
+    body.id = collapseId;
+    body.className = 'accordion-collapse collapse';
+    body.setAttribute('aria-labelledby', headingId);
+    body.innerHTML = `
+      <div class="accordion-body">
+        <div class="row accordion-content">
+          <div class="col-sm-4 d-flex justify-content-center">
+            <img class="accordion-img" src="./img/research/working_papers/${element.img}.jpg"
+                 alt="Figure for: ${element.title}">
+          </div>
+          <div class="col-sm-8 accordion-text">
+            <i>${element.coauthor}</i>
+            <b> ${element.subtitle}</b>
+            <b>[<a href="${element.link}" target="_blank" rel="noopener noreferrer">Working paper</a>]</b>
+            <p>${element.text}</p>
+          </div>
+        </div>
+      </div>
+    `;
 
-        let body = document.createElement("div");
-        body.innerHTML = `<div class="accordion-body accordion-text"><i>${element.coauthor}</i>\n<b>${element.subtitle}</b>\n<b><a href="${element.slides}" target="_blank">${element.type}</a></b>
-        <p>${element.text}</p></div>`;
-        body.setAttribute("id", `panelsStayOpen-collapse${element.id}`);
-        body.setAttribute("class", "accordion-collapse collapse");
-        body.setAttribute("aria-labelledby", "panelsStayOpen-headingOn");
-        item.appendChild(body);
-    });
-})
+    item.appendChild(body);
+    accordionPapers.appendChild(item);
+  });
+});
 
-async function policy(){
-    const response = await fetch ('policy.json')
-    return await response.json()
-}
+// === Advanced Work in Progress ===
+fetchJSON('progress.json').then(data => {
+  data.forEach(element => {
+    const item = document.createElement('div');
+    item.className = 'accordion-item';
 
-policy().then(data =>{
-    data.forEach(element =>{
-        let item = document.createElement("li")
-        item.innerHTML = `<a href="${element.link}" target="_blank">${element.title}</a>`
-        item.setAttribute("class", "list-item");
-        listPolicy.appendChild(item)
-    })
-})
+    const headingId = `panelsStayOpen-heading-${element.id}`;
+    const collapseId = `panelsStayOpen-collapse-${element.id}`;
 
-/* data */
+    item.innerHTML = `
+      <h2 class="accordion-header" id="${headingId}">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#${collapseId}"
+                aria-expanded="false"
+                aria-controls="${collapseId}">
+          ${element.title}
+        </button>
+      </h2>
+    `;
 
+    const body = document.createElement('div');
+    body.id = collapseId;
+    body.className = 'accordion-collapse collapse';
+    body.setAttribute('aria-labelledby', headingId);
+    body.innerHTML = `
+      <div class="accordion-body accordion-text">
+        <i>${element.coauthor}</i>
+        <b> ${element.subtitle}</b>
+        <b>[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${element.type}</a>]</b>
+        <p>${element.text}</p>
+      </div>
+    `;
 
+    item.appendChild(body);
+    accordionProgress.appendChild(item);
+  });
+});
+
+// === Policy ===
+fetchJSON('policy.json').then(data => {
+  data.forEach(element => {
+    const item = document.createElement('li');
+    item.className = 'list-group-item';
+    item.innerHTML = `<a href="${element.link}" target="_blank" rel="noopener noreferrer">${element.title}</a>`;
+    listPolicy.appendChild(item);
+  });
+});
+
+// === Data & Codes directory toggles ===
 document.querySelectorAll('.folder').forEach(folder => {
-    folder.addEventListener('click', function() {
-        const subMenu = this.nextElementSibling;
-        if (subMenu) {
-            subMenu.classList.toggle('show');
-        }
-    });
+  folder.addEventListener('click', function () {
+    const subMenu = this.nextElementSibling;
+    if (subMenu) subMenu.classList.toggle('show');
+  });
 });
