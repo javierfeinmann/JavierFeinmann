@@ -67,24 +67,24 @@ header{
     border-bottom: 8px solid rgba(0, 0, 12, 0.307);
 }
 .titles{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     color: black;
 }
 .subtitle{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
     color: black;
     margin-bottom: 20px;
 }
 .subtitles{
-    font-size: 25px;
+    font-size: 22px;
     color: black;
     text-decoration: underline;
     margin-bottom: 0px;
 }
 .title-index{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Aboreto', cursive;
     font-weight: bold;
     color: black;
@@ -206,6 +206,10 @@ p{
     }
 }
 
+@media (max-width: 767px){
+  .accordion-content { flex-direction: column-reverse; }
+}
+
 /*  */
 .directory ul {
     list-style-type: none;
@@ -237,15 +241,34 @@ ul.show {
   margin-bottom: 6px;
 }
 
-.paper-bullets {
-  font-size: 0.9rem;      /* smaller font as requested */
-  margin: 6px 0 8px 1rem; /* a little indent/spacing */
+.paper-bullets { margin: 6px 0 8px 0; padding-left: 0; }
+.paper-bullets li { 
+  display: inline-block; 
+  margin: 3px 6px 3px 0; 
+  padding: 4px 8px; 
+  border-radius: 12px; 
+  font-size: 0.85rem; 
+  background: #eef1ff;
+  border: 1px solid #d9dfff;
 }
 
 .paper-link {
   margin-bottom: 6px;
 }
 
+.paper-link a::after { 
+    content: ' ↗'; 
+}
+
 .paper-abstract {
   margin-top: 4px;
 }
+
+.text-index, .accordion-text p, p { 
+    text-align: left; 
+}
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 84px; } /* height of your navbar */
+
+a:focus { outline: 2px solid #99aaff; outline-offset: 2px; }
