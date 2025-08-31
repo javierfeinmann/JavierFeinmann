@@ -105,14 +105,13 @@ b{
 }
 .text-index{
     text-align: justify;
-    font-size: 1.2rem;
-    display: flex;
+    font-size: 0.95rem;       /* ~5% smaller than default */
+    line-height: 1.55;    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.text-index p{
     color: black;
 }
+
 .cv{
     margin-top: 15px;
     width: 100%;
@@ -274,3 +273,12 @@ html { scroll-behavior: smooth; }
 section { scroll-margin-top: 84px; } /* height of your navbar */
 
 a:focus { outline: 2px solid #99aaff; outline-offset: 2px; }
+
+/* Shrink only the image for "The Effects of Revealing Borrowers Information..." */
+#accordionPanelsStayOpenPapers #Papers-Four img {
+  max-width: 85%;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto; /* centers it nicely */
+}
+
