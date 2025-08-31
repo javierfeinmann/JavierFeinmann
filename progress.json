@@ -1,39 +1,68 @@
 [
     {
         "title": "Heterogeneous Responses in Payments Under the Table: Experimental Evidence from the Dominican Republic <i> - Draft coming soon </i> ",
-        "coauthor": "Joint with Marvin Cardoza, Joaquin Herrera and Roberto Hsu Rocha",
-        "subtitle": "Funded by Structural Transformation and Economic Growth Center (STEG)",
+        "coauthors": [
+            { "name": "Marvin Cardoza", "url": "" },
+            { "name": "Joaquín Herrera", "url": "" },
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
+        ],
+        "subtitle": "",
+        "bullets": [
+            "Funded by <a href='https://steg.cepr.org' target='_blank' rel='noopener noreferrer'>Structural Transformation and Economic Growth Center (STEG)</a>",
+            "Post treatment data collection on Social Security and VAT is done. Tax data available in July 2026 "
+        ],
         "text": "In this paper, we conduct a randomized controlled trial (RCT) in collaboration with the Dominican Republic Tax Authority to evaluate the impact of various deterrence messages on the underreporting of formal employees’ wages—referred to as Payments Under the Table (PUT)—and on informal employment across 67,570 firms, comprising the universe of registered establishment in the country. We introduce novel variations in the role of labor courts in curbing illegal labor market practices. In the first treatment arm, we increase employers’ perceived likelihood of being sued by their employees (awareness effect). The second treatment arm informs employers that the tax authority may use labor lawsuits as triggers for tax audits, emphasizing the potential spillover effects of individual lawsuits (propagation effect). A third treatment arm introduces an intervention focused on profits rather than payroll misreporting, testing a distinct set of predictions. Uniquely within the literature on randomized deterrence messages, we also assess worker-level responses, allowing us to examine heterogeneous effects based on factors such as minimum wage regulations, income tax thresholds, and variations in bargaining power.",
         "type": "[AEA Registration Plan]",
-        "slides":"./files/research/work_in_progress/PUT_experiment_registrationplan.pdf",
+        "slides": "./files/research/work_in_progress/PUT_experiment_registrationplan.pdf",
         "id": "Progress-One"
-    },
+    } ,   
+    
     {
         "title": "Survivors Pension: Labor Supply and Optimal Insurance <i> - Draft coming soon </i>",
-        "coauthor": "Roberto Hsu Rocha",
-        "subtitle": "New!",
+        "coauthors": [
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
+        ],
+        "subtitle": "Draft coming soon",
         "text": "While nearly all governments provide survivorship pensions to widows, countries differ widely in both the coverage and generosity of these programs. Optimal policy design hinges on two key parameters: the value individuals place on insurance against widowhood and their labor supply responses to benefit receipt. This paper estimates these parameters using rich administrative data from Brazil, which has the most generous survivorship pension system in the world. Leveraging quasi-experimental variation in the timing of widowhood and in benefit generosity, we find that a 1% increase in pension benefits reduces labor supply by 0.29%. In the absence of benefits, the labor supply response to widowhood ranges from 0.01 to 0.10, consistent with prior evidence. These responses hold across a broad set of labor market outcomes beyond formal employment, suggesting limited substitution across activities. Finally, we show that key elasticities vary with observable characteristics, such as pre-widowhood earnings. We use this heterogeneity to quantify the welfare gains from tailoring survivor benefits to individual profiles.",
         "type": "",
         "slides":"",
         "id": "Progress-Two"
-    },
-     {
-        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
-        "coauthor": "Permanent research team: Gabriel Zucman, Pierre Bachas, Thiago Scot, Javier Feinmann, and Theo Ribas",
-        "subtitle": "European Tax Observatory and Receita Federal do Brasil",
-        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
-        "type": "",
-        "slides":"",
-        "id": "Progress-Three"
-    },
+    } ,   
+    
     {
         "title": "Payments Under the Table in Latin America <i> - Slides available </i>",
-        "coauthor":"Joint with Pablo Garriga, Maximiliano Lauletta, Ana Paula Franco, Roberto Hsu, and Nathalie Gonzalez Prieto",
-        "subtitle": "Funded by the World Bank",
+        "coauthors": [
+            { "name": "Pablo Garriga", "url": "https://pablogarriga.github.io/" },
+            { "name": "Maximiliano Lauletta", "url": "https://sites.google.com/view/lauletta" },
+            { "name": "Ana Paula France", "url": "https://www.apfrancocarruitero.com/" },
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" },
+            { "name": "Nathalie Gonzalez Prieto", "url": "https://sites.google.com/view/nathalie-gonzalez-prieto/" }
+        ],
+        "subtitle": "",
+        "bullets": [
+            "Funded by the World Bank",
+            "Slides available!"
+        ],
         "text": "This project extends the work of Feinmann et al (2023) to document payments under the table for formal employees in other Latin American countries. At the moment, we included Argentina, Brazil, Chile, Colombia, Mexico, and Peru. We find a simple average of 15% of employees who admit to receiving PUTs for about 23% of their wages. This average masks significant heterogeneity, where Argentina has more than a quarter of formal employees receiving PUTs, while this number is less than 4% in Chile. Importantly, PUTs are sharply increasing in wages, with employees in the top wage group doubling the underreporting sharing of low-wage employees. This patterns holds for both the extensive and intensive margin, and for five out of the six countries surveyed. Despite the fact that wages and firm size are positively correlated, PUTs are strongly decreasing on firm size, measured by number of employees. However, a considerable share of employees in firms with more than 500 employees admits to receiving PUTs. Consistent across all countries, employees holding managerial positions and with frequent interaction with owners are significantly more likely to receive PUTs, even after controlling by wages and firm size. We also show that employees with less tax morale are more likely to report receiving PUTs. We provide evidence that cash, bank transfer and virtual payments are the main disbursement methods for PUTs, but with significant heterogeneity across income groups. High-wage employees are more likely to use bank transfers and virtual payments, and less likely to use cash. Finally, we also explore what regulations or taxes help to determine the amount PUT. We find that the minimum wage, social security contributions, payroll taxes, and income taxes ranked at the top. Income taxes and social security contributions are relatively more important for high-wage earners, compared to the minimum wage or extra hours, which are more relevant for low-wage employees. The end of the presentation lists the project's next steps.",
         "type": "[Slides]",
         "slides":"./files/research/work_in_progress/PUT_latam_slides.pdf",
         "img": "",
         "id": "Progress-Four"
-    }
+    } ,   
+
+
+    {
+        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
+        "coauthors": [
+            { "name": "Theo Palomo", "url": "https://sites.google.com/view/theopalomo/" },
+            { "name": "Davi Bhering", "url": ""},
+            { "name": "Thiago Scot", "url": "https://sites.google.com/view/thiagoscot/"},
+            { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
+            { "name": "Gabriel Zucman", "url": "https://gabriel-zucman.eu/"}            ],
+        "subtitle": "EU Tax Observatory and Receita Federal de Brasil",
+        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
+        "type": "",
+        "slides":"",
+        "id": "Progress-Three"
+    }    
 ]

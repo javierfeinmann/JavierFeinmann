@@ -90,7 +90,7 @@ fetchJSON('wp.json').then(data => {
   });
 });
 
-// === Advanced Work in Progress (unchanged layout) ===
+// === Advanced Work in Progress ===
 fetchJSON('progress.json').then(data => {
   data.forEach(element => {
     const item = document.createElement('div');
@@ -99,6 +99,7 @@ fetchJSON('progress.json').then(data => {
     const headingId = `panelsStayOpen-heading-${element.id}`;
     const collapseId = `panelsStayOpen-collapse-${element.id}`;
 
+    // Header
     item.innerHTML = `
       <h2 class="accordion-header" id="${headingId}">
         <button class="accordion-button collapsed" type="button"
@@ -111,18 +112,41 @@ fetchJSON('progress.json').then(data => {
       </h2>
     `;
 
+    // Body
     const body = document.createElement('div');
     body.id = collapseId;
     body.className = 'accordion-collapse collapse';
     body.setAttribute('aria-labelledby', headingId);
+
+    // Reuse the same helpers as papers
+    const coauthorsHTML = renderCoauthors(element);  // uses element.coauthors or falls back to element.coauthor
+    const subtitleHTML  = element.subtitle ? `<div class="paper-subtitle">${element.subtitle}</div>` : '';
+    const bulletsHTML   = renderBullets(element);    // renders <ul> if element.bullets exists
+
+    // Link label: use element.type (strip outer brackets if present), else 'Slides'
+    const rawLabel = (element.type || '').trim();
+    const label = rawLabel ? rawLabel.replace(/^\[|\]$/g, '') : 'Slides';
+    const linkHTML = (element.slides && element.slides.trim())
+      ? `<div class="paper-link"><b>[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${label}</a>]</b></div>`
+      : '';
+
+    const abstractHTML = element.text ? `<p class="paper-abstract">${element.text}</p>` : '';
+
+    // No image column for WIP
     body.innerHTML = `
-      <div class="accordion-body accordion-text">
-        <i>${element.coauthor || ''}</i>
-        <b> ${element.subtitle || ''}</b>
-        <b>[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${element.type}</a>]</b>
-        <p>${element.text || ''}</p>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <div class="accordion-text">
+            ${coauthorsHTML}
+            ${subtitleHTML}
+            ${bulletsHTML}
+            ${linkHTML}
+            ${abstractHTML}
+          </div>
+        </div>
       </div>
     `;
+
     item.appendChild(body);
     accordionProgress.appendChild(item);
   });

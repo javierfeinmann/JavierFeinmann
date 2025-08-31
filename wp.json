@@ -42,7 +42,7 @@
         ],
         "subtitle": "New version coming soon",
         "bullets": [
-            "Funded by CEGA and IRLE"
+            "Funded by <a href='https://cega.berkeley.edu/' target='_blank' rel='noopener noreferrer'>CEGA</a> and <a href='https://irle.berkeley.edu/' target='_blank' rel='noopener noreferrer'>IRLE</a>"
         ],
         "link": "./files/research/working_papers/Social_Mobility_Higher_Education_Brazil_draft.pdf",
         "img": 2,
