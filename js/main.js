@@ -7,14 +7,14 @@ const listPolicy        = document.getElementById('listPolicy');
 const fetchJSON = (url) => fetch(url).then(r => r.json());
 
 const renderCoauthors = (el) => {
-  // Prefer the new structured 'coauthors' if present
   if (Array.isArray(el.coauthors) && el.coauthors.length) {
     const links = el.coauthors
-      .map(c => `<a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.name}</a>`)
+      .map(c => (c.url && c.url.trim())
+        ? `<a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.name}</a>`
+        : `${c.name}`)
       .join(', ');
     return `<div class="paper-coauthors"><i>Joint with ${links}</i></div>`;
   }
-  // Fallback: old plain string 'coauthor'
   if (el.coauthor) return `<div class="paper-coauthors"><i>${el.coauthor}</i></div>`;
   return '';
 };
