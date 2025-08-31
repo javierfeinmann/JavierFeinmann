@@ -227,3 +227,25 @@ ul ul {
 ul.show {
     display: block; /* Muestra el submenú cuando está activo */
 }
+
+.paper-coauthors {
+  margin-bottom: 4px;
+}
+
+.paper-subtitle {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.paper-bullets {
+  font-size: 0.9rem;      /* smaller font as requested */
+  margin: 6px 0 8px 1rem; /* a little indent/spacing */
+}
+
+.paper-link {
+  margin-bottom: 6px;
+}
+
+.paper-abstract {
+  margin-top: 4px;
+}

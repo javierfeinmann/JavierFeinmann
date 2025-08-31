@@ -6,17 +6,37 @@ const listPolicy        = document.getElementById('listPolicy');
 // === Helpers ===
 const fetchJSON = (url) => fetch(url).then(r => r.json());
 
+const renderCoauthors = (el) => {
+  // Prefer the new structured 'coauthors' if present
+  if (Array.isArray(el.coauthors) && el.coauthors.length) {
+    const links = el.coauthors
+      .map(c => `<a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.name}</a>`)
+      .join(', ');
+    return `<div class="paper-coauthors"><i>Joint with ${links}</i></div>`;
+  }
+  // Fallback: old plain string 'coauthor'
+  if (el.coauthor) return `<div class="paper-coauthors"><i>${el.coauthor}</i></div>`;
+  return '';
+};
+
+const renderBullets = (el) => {
+  if (!Array.isArray(el.bullets) || el.bullets.length === 0) return '';
+  const items = el.bullets.map(b => `<li>${b}</li>`).join('');
+  return `<ul class="paper-bullets">${items}</ul>`;
+};
+
 // === Working Papers ===
 fetchJSON('wp.json').then(data => {
   data.forEach(element => {
-    // Wrapper item
+    // Wrapper
     const item = document.createElement('div');
     item.className = 'accordion-item';
 
-    // Header
+    // Header IDs
     const headingId = `panelsStayOpen-heading-${element.id}`;
     const collapseId = `panelsStayOpen-collapse-${element.id}`;
 
+    // Header
     item.innerHTML = `
       <h2 class="accordion-header" id="${headingId}">
         <button class="accordion-button collapsed" type="button"
@@ -34,6 +54,19 @@ fetchJSON('wp.json').then(data => {
     body.id = collapseId;
     body.className = 'accordion-collapse collapse';
     body.setAttribute('aria-labelledby', headingId);
+
+    // Assemble text column content in your desired order:
+    // 1) italic "Joint with …" (names clickable)
+    // 2) subtitle (small, optional)
+    // 3) bullet points (small font)
+    // 4) link to working paper
+    // 5) abstract
+    const coauthorsHTML = renderCoauthors(element);
+    const subtitleHTML  = element.subtitle ? `<div class="paper-subtitle">${element.subtitle}</div>` : '';
+    const bulletsHTML   = renderBullets(element);
+    const linkHTML      = element.link ? `<div class="paper-link"><b>[<a href="${element.link}" target="_blank" rel="noopener noreferrer">Working paper</a>]</b></div>` : '';
+    const abstractHTML  = element.text ? `<p class="paper-abstract">${element.text}</p>` : '';
+
     body.innerHTML = `
       <div class="accordion-body">
         <div class="row accordion-content">
@@ -42,10 +75,11 @@ fetchJSON('wp.json').then(data => {
                  alt="Figure for: ${element.title}">
           </div>
           <div class="col-sm-8 accordion-text">
-            <i>${element.coauthor}</i>
-            <b> ${element.subtitle}</b>
-            <b>[<a href="${element.link}" target="_blank" rel="noopener noreferrer">Working paper</a>]</b>
-            <p>${element.text}</p>
+            ${coauthorsHTML}
+            ${subtitleHTML}
+            ${bulletsHTML}
+            ${linkHTML}
+            ${abstractHTML}
           </div>
         </div>
       </div>
@@ -56,7 +90,7 @@ fetchJSON('wp.json').then(data => {
   });
 });
 
-// === Advanced Work in Progress ===
+// === Advanced Work in Progress (unchanged layout) ===
 fetchJSON('progress.json').then(data => {
   data.forEach(element => {
     const item = document.createElement('div');
@@ -83,13 +117,12 @@ fetchJSON('progress.json').then(data => {
     body.setAttribute('aria-labelledby', headingId);
     body.innerHTML = `
       <div class="accordion-body accordion-text">
-        <i>${element.coauthor}</i>
-        <b> ${element.subtitle}</b>
+        <i>${element.coauthor || ''}</i>
+        <b> ${element.subtitle || ''}</b>
         <b>[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${element.type}</a>]</b>
-        <p>${element.text}</p>
+        <p>${element.text || ''}</p>
       </div>
     `;
-
     item.appendChild(body);
     accordionProgress.appendChild(item);
   });
