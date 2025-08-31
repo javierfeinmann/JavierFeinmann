@@ -70,6 +70,7 @@ header{
     font-size: 32px;
     font-weight: bold;
     color: black;
+    margin: 1.5rem 0 .75rem;
 }
 .subtitle{
     font-size: 22px;
@@ -88,6 +89,7 @@ header{
     font-family: 'Aboreto', cursive;
     font-weight: bold;
     color: black;
+    margin-bottom: .5rem;
 }
 b{
     text-align: center;
