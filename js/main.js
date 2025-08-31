@@ -71,7 +71,7 @@ fetchJSON('wp.json').then(data => {
       <div class="accordion-body">
         <div class="row accordion-content">
           <div class="col-sm-4 d-flex justify-content-center">
-            <img class="accordion-img" src="./img/research/working_papers/${element.img}.jpg"
+            <img class="accordion-img" src="./img/research/working_papers/${element.img}.webp"
                  alt="Figure for: ${element.title}">
           </div>
           <div class="col-sm-8 accordion-text">
