@@ -75,5 +75,17 @@
         "img": 3,
         "id": "Papers-Three",
         "text": "This paper studies the effect of prohibiting the use of cash for wage disbursements on labor markets in developing countries. We study a reform in Uruguay that mandated wage payments to be disbursed using only electronic methods. Using a difference-in-difference approach based on sector-level cash intensity prior to the reform, our results indicate that firms in high cash intensity sectors are significantly more likely to discontinue formal activities post-reform. Active firms show a slight reduction in the number of employees and an increase in repoted wages. These results are driven by low productivity firms. Complementary results using survey data indicate an increase in informal employment and a decrease in collusive underreporting of earnings partially explain these results. Overall, results suggest that, while eliminating cash for wage payments enhances tax compliance among formal workers, it may also shift some economic activity into full informality, offsetting the revenue gains from improved payroll tax compliance."
+    },
+
+    {
+        "title": "Labor Supply Responses to Death of Family Members in the Presence of Survivor Pensions",
+        "coauthors": [
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
+        ],
+        "subtitle": "New draft coming soon",
+        "link": "./files/research/working_papers/pensions_brazil_JF_RHR.pdf",
+        "img": 6,
+        "id": "Papers-Six",
+        "text": " We study the labor supply effects of survivor pensions using administrative data from Brazil, one of the most generous systems in the world. Leveraging both an event-study around household deaths and a policy reform that reduced pension duration for younger spouses, we find that survivor benefits significantly reduce labor supply, especially on the extensive margin. The 2015 reform, which introduced age-based limits to benefit duration, led to smaller labor supply reductions among those affected. Our findings imply a labor supply elasticity of-0.2 with respect to benefit duration and highlight the importance of considering both benefit size and horizon in social insurance design."
     }
 ]
