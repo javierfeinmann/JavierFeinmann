@@ -78,6 +78,20 @@
     },
 
     {
+        "title": "Labor Lawsuits and Firms' Tax Compliance: Evidence from an RCT in the Dominican Republic",
+        "coauthors": [
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" },
+            { "name": "Marvin Cardoza", "url": ""},
+            { "name": "Joaquin Herrera", "url": "" }           
+        ],
+        "subtitle": "New!",
+        "link": "./files/research/working_papers/PUT_experiment_dominicana.pdf",
+        "img": 7,
+        "id": "Papers-Seventh",
+        "text": "This paper evaluates how deterrence messages highlighting labor lawsuit risk reduce informality and payments under the table (PUT) within registered establishments. In partnership with the Dominican Republic's tax authority (DGII), we run a nationwide randomized information experiment covering the universe of 67,570 registered private-sector firms. We leverage tax and social security data to evaluate the effects on total payroll, withheld income taxes, formal employment, and other tax bases. We find that small firms increase total payroll by about 2%, with no difference across treatment arms, and the effects persist for at least 10 months. Employment responses follow a similar pattern but do not explain the overall effects, suggesting that firms correct both margins. Heterogeneous responses suggest that compliers to the experiment may not be those in which informal labor market practices are more pronounced, but rather those for whom the information has been more relevant or who take communication with the tax authority more seriously."
+    },
+
+    {
         "title": "Labor Supply Responses to Death of Family Members in the Presence of Survivor Pensions",
         "coauthors": [
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
