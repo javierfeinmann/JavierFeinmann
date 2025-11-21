@@ -77,6 +77,20 @@
         "text": "This paper studies the effect of prohibiting the use of cash for wage disbursements on labor markets in developing countries. We study a reform in Uruguay that mandated wage payments to be disbursed using only electronic methods. Using a difference-in-difference approach based on sector-level cash intensity prior to the reform, our results indicate that firms in high cash intensity sectors are significantly more likely to discontinue formal activities post-reform. Active firms show a slight reduction in the number of employees and an increase in repoted wages. These results are driven by low productivity firms. Complementary results using survey data indicate an increase in informal employment and a decrease in collusive underreporting of earnings partially explain these results. Overall, results suggest that, while eliminating cash for wage payments enhances tax compliance among formal workers, it may also shift some economic activity into full informality, offsetting the revenue gains from improved payroll tax compliance."
     },
 
+        {
+        "title": "Income Shifting vs. Real Responses in Simplified Tax Regimes",
+        "coauthors": [
+            { "name": "Rafael Bressan", "url": "" },
+            { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }           
+        ],
+        "subtitle": "New!",
+        "link": "./files/research/working_papers/slides_FactorR.pdf",
+        "img": 8,
+        "id": "Papers-Eight",
+        "text": "Small and medium-sized firms (SME) play a central role in economic activity worldwide and they are often subject to simplified tax regimes (STR) aiming to promote registration and reduce hassle costs. When STRs rely on revenue taxes two major concerns arise. First, revenue taxes do not allow for cost deductibility, reducing input demand such as labor. Second, low reporting and monitoring requirements facility tax evasion and avoidance. Understanding how firms subject to STR respond in all these different margins is critical to a proper design that fosters registration and growth without opening loopholes to game the system affecting government revenues. We study the ''Factor R'' policy in Brazil, which massively reduced the revenue tax rate for firms that reached a threshold of total payroll over total revenues equal to .28. The policy created two critical sources of variation. Firms that were already above this threshold simply saw their revenue tax rate reduced by 10pp. Firms that were below the threshold had to increase their Factor R up to .28 to get the revenue tax rate, which could be achieved by increasing employees' payroll, shifting owners' dividends to wages or reducing revenues. First, we find that right after the introduction of the policy a large share of firms bunch at the threshold. The bunching grows over time, totaling 15% of all firms by 2024. For firms above the threshold pre-reform, we find an intensive margin revenue elasticity of .79. For those below the threshold, we find very large and growing intensive margin income-shifting elasticties of around 1.16, but no response in total revenues or employment."
+    },
+
     {
         "title": "Labor Lawsuits and Firms' Tax Compliance: Evidence from an RCT in the Dominican Republic",
         "coauthors": [
