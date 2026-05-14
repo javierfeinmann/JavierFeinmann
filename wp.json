@@ -36,7 +36,7 @@
     },
 
     {
-        "title": "Social Mobility and Higher Education: The Role of Elite Public Colleges",
+        "title": "Inequality and Higher Education: The Role of Elite Public Colleges",
         "coauthors": [
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
         ],
@@ -47,7 +47,7 @@
         "link": "./files/research/working_papers/Social_Mobility_Higher_Education_Brazil_draft.pdf",
         "img": 2,
         "id": "Papers-Two",
-        "text": "How does higher education shape social mobility in countries where elite colleges are public and tuition-free? Using linked microdata spanning several decades, we follow Brazilian high school graduates through college and into the labor market to study income segregation, mobility, and the distributional incidence of public spending.  We first show that large gaps in test scores across income groups explain the substantial income segregation in public colleges; conditional on scores, public admissions are income-neutral. We then combine colleges' income composition with graduates' earnings ranks ten years later to construct college-level mobility rates. Elite public colleges have relatively low mobility rates because the sharp fall in the enrollment of disadvantaged students outweighs higher mobility. Using college-level financial data, we document that per-student government transfers are much higher at elite publics, rendering a very regressive picture of the public expenditure in higher education: the top 10% receiving 6.75 times more than the bottom 10%. Finally, exploiting differential exposure to a nationwide affirmative-action reform, we quantify causal effects on income composition in each college tier. We find that, in the absence of the policy, the top 20% would receive 6pp more of total government transfers to public universities."
+        "text": "How does higher education shape present and future inequality in countries where elite colleges are public and tuition-free? Using linked microdata for Brazil spanning several decades, we document that substantial income segregation across colleges persists, as disadvantaged students fail to achieve the grades required at elite public institutions. We show that this translates into a two-sided inequality. First, it concentrates college returns among rich students, affecting social mobility and future inequality, with elite public colleges having one of the lowest mobility rates. Second, it also diverts public funds towards rich households, thereby exacerbating present inequality. Using college-level financial data, we provide novel evidence that per-student government transfers are higher at elite public universities, yielding a highly regressive picture of public expenditure: the top 10% receive 6.75 times as much as the bottom 10%. Finally, exploiting differential exposure to a nationwide affirmative-action reform, we quantify its causal effects on the progressivity of public funds. We find that, absent the policy, the top quintile's share of public transfers would have been 5.7 percentage points higher, close to (but smaller than) the effect of equalizing per-student spending across public colleges."
     }, 
 
     {
