@@ -53,9 +53,7 @@
     {
         "title": "Revealing Borrowers' Information Through Credit Scores",
         "coauthors": [
-            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" },
-            { "name": "Mariana Mercucci", "url": ""},
-            { "name": "Josival Leite", "url": "" }           
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }      
         ],
         "subtitle": "New version!",
         "link": "./files/research/working_papers/cadastro_positivo_draft.pdf",
