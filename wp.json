@@ -104,7 +104,7 @@
     },
 
     {
-        "title": "Labor Supply Responses to Death of Family Members in the Presence of Survivor Pensions",
+        "title": "Survivorship Pension: Labor Supply and Optimal Insurance",
         "coauthors": [
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
         ],
@@ -112,6 +112,6 @@
         "link": "./files/research/working_papers/pensions_brazil_JF_RHR.pdf",
         "img": 6,
         "id": "Papers-Six",
-        "text": " We study the labor supply effects of survivor pensions using administrative data from Brazil, one of the most generous systems in the world. Leveraging both an event-study around household deaths and a policy reform that reduced pension duration for younger spouses, we find that survivor benefits significantly reduce labor supply, especially on the extensive margin. The 2015 reform, which introduced age-based limits to benefit duration, led to smaller labor supply reductions among those affected. Our findings imply a labor supply elasticity of-0.2 with respect to benefit duration and highlight the importance of considering both benefit size and horizon in social insurance design."
+        "text": "In this paper, we separate labor supply responses to widowhood in the presence of survivorship pension into 1) response to widowhood, absent the pension, and 2) response to the benefit, within the widowhood state. We show that this distinction is critical for welfare analysis in a standard Bailey–Chetty formula. Using microdata from Brazil, we leverage both an event study around a household member’s death and two policy reforms that reduced pension duration and value. We find that benefit recipients reduce weekly hours worked by 22% four years after the spouse’s death, with no substitution to other labor market activities, such as self-employment or business ownership. Reductions in the duration and in the value of benefits reduce labor supply responses. We estimate an elasticity of Labor Earnings with respect to the lifetime benefit values of between 0.50 and 0.72."
     }
 ]
