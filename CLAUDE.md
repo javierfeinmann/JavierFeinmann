@@ -37,6 +37,7 @@ tiempo de ejecución leyendo tres JSON de la raíz:
 | `wp.json` | Working Papers (acordeón **con** figura) | `#accordionPanelsStayOpenPapers` |
 | `progress.json` | Advanced Work in Progress (acordeón **sin** figura) | `#accordionPanelsStayOpenProgress` |
 | `policy.json` | Policy Report (lista simple) | `#listPolicy` |
+| `events.json` | Events (tarjetas de próximas charlas) | `#listEvents` |
 
 > **Para agregar o editar un paper se toca el JSON, nunca el HTML.**
 
@@ -76,6 +77,42 @@ Igual que `wp.json` salvo que:
 ### `policy.json`
 
 Mínimo: solo `title` y `link`.
+
+### Esquema de `events.json`
+
+```json
+{
+  "date":      "2026-11-03",
+  "endDate":   "2026-11-05",
+  "event":     "IIPF Annual Congress",
+  "kind":      "Conference",
+  "location":  "Lisbon, Portugal",
+  "paper":     "Tax Progressivity and Inequality in Brazil",
+  "link":      "https://...",
+  "linkLabel": "Paper"
+}
+```
+
+Solo `date` y `event` son necesarios; el resto es opcional y se omite si está vacío.
+
+**Reglas de comportamiento (implementadas en `main.js`):**
+
+- **Las fechas van en formato ISO `YYYY-MM-DD`.** `main.js` las parsea a mano en vez de
+  usar `new Date(string)`, porque este último las interpreta como UTC medianoche y en husos
+  con offset negativo el evento se muestra un día antes.
+- **Los eventos pasados se ocultan solos.** El corte usa `endDate` (o `date` si no hay), así
+  que un congreso de varios días **sigue visible mientras transcurre** y desaparece recién el
+  día después de terminar.
+- **Se ordenan solos por fecha ascendente.** El orden del array *no* importa (a diferencia de
+  `wp.json`).
+- **Sin fecha = TBC.** Si `date` está vacío o mal escrito, el evento se muestra al final con
+  el badge `TBC` y **nunca se auto-oculta**. Modo de falla deliberado: ante un typo el evento
+  queda visible en vez de desaparecer sin aviso.
+- **Si no queda ningún evento futuro, la sección entera y su link del menú se eliminan del
+  DOM**, para no dejar un encabezado "Events" vacío.
+- Rangos dentro del mismo mes se colapsan en el badge (`Nov 3-5`). Si el rango cruza meses,
+  el badge muestra la fecha de inicio y el rango completo aparece como línea aparte.
+- `linkLabel` por defecto es `"Slides"` si hay `link` pero no etiqueta.
 
 ---
 
@@ -188,7 +225,18 @@ El repo tampoco tiene `.gitignore`.
 
 ---
 
-## 9. Registro de sesiones
+## 9. Pendientes abiertos
+
+- **"The Margins of Firm Tax Incentives"**: es el paper que Javier presenta en 6 de sus 9
+  seminarios, pero **no figura en `wp.json`**, así que un visitante que ve la agenda no puede
+  encontrarlo en Research. Puede ser un paper nuevo o el retítulo de *"Income Shifting vs. Real
+  Responses in Simplified Tax Regimes"* (el del Factor R). **Preguntar a Javier.**
+- **Push pendiente**: hay commits locales sin subir a `origin/main`.
+- **Git LFS**: migrar antes de que el CSV de 89 MB crezca (§5).
+
+---
+
+## 10. Registro de sesiones
 
 ### 2026-09-09 — Setup inicial + arreglo de rutas
 
@@ -214,4 +262,42 @@ en el Linux de GitHub Pages.
 8 figuras `.webp` de `wp.json` y los 7 PDFs referenciados en los JSON existen en disco.
 
 **Estado al cierre:** commiteado en local, **sin push** (pendiente de confirmación).
-**Siguiente paso:** Javier quiere discutir una tanda de ediciones de contenido/diseño.
+
+### 2026-09-09 — Nueva sección "Events"
+
+Javier pidió una cuarta sección para listar seminarios y conferencias futuras.
+
+**Decisiones (elegidas por él):**
+- Posición en el menú: **después de Research** → Home · Research · Events · Teaching · Data & Codes.
+- Eventos pasados: **se ocultan automáticamente** por fecha.
+- Formato: **tarjetas con la fecha destacada** en un badge navy a la izquierda.
+
+**Implementación** — se siguió el patrón existente (JSON + render en `main.js`):
+- `events.json` nuevo (ver esquema en §2).
+- `js/main.js`: bloque `=== Events ===` con `parseLocalDate`, filtrado, orden y render.
+- `index.html`: link en el navbar + `<section id="events">`.
+- `css/style.css`: bloque `====== Events ======` al final.
+
+**Verificación:** como no hay Node en la máquina, se portó la lógica de fecha a un script de
+Python y se corrió contra `events.json` simulando cuatro "hoy" distintos más casos borde
+(congreso a caballo de dos meses, fecha vacía, fecha mal escrita). Confirmado: los rangos
+sobreviven mientras transcurren, el orden es correcto y la sección se elimina si queda vacía.
+
+**Preview local:** `python -m http.server 8000` en la raíz → http://localhost:8000
+(hace falta servidor, no alcanza con abrir el archivo: `main.js` usa `fetch`).
+
+**Agenda real cargada:** 9 seminarios entre sep-2026 y mar-2027 (Dublin, Barcelona, San Andrés,
+UdelaR, FGV-SP, FGV-RJ, PUC-Rio, CAF, CREST-ENSAE). 6 de los 9 presentan el mismo paper,
+*"The Margins of Firm Tax Incentives"* — **ese título no existe en `wp.json`** (ver §9).
+
+**Normalizaciones aplicadas a los datos que pasó Javier** (avisadas, revertibles):
+"Universita" → "Universitat de Barcelona"; acentos en San Andrés, República y São Paulo;
+espacio final y formato en "CREST-ENSAE, Institut Polytechnique de Paris".
+
+**Caso `"paper": "TBD"`:** dos seminarios lo tienen. `main.js` detecta `TBD`/`TBA`/`TBC`
+(case-insensitive) y lo renderiza como "Paper to be confirmed" en gris y sin itálica, para que
+no parezca un paper titulado "TBD".
+
+Los archivos usan **UTF-8 sin BOM**; combinado con `<meta charset="UTF-8">` los acentos
+renderizan bien. Cuidado: PowerShell 5.1 los muestra mal en consola (`AndrÃ©s`), pero es un
+artefacto de la terminal, no del archivo.
