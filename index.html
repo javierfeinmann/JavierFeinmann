@@ -23,7 +23,10 @@
 
     <link rel="icon" href="img/home/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ?v= fuerza a los navegadores a bajar la version nueva. GitHub Pages sirve estos
+         archivos con Cache-Control: max-age=600, asi que sin esto un visitante que ya
+         estuvo en el sitio sigue usando el CSS/JS viejo. SUBIR LA FECHA al tocar css/js. -->
+    <link rel="stylesheet" href="css/style.css?v=20260909">
     <title>Javier Feinmann</title>
 </head>
 <body>
@@ -44,13 +47,13 @@
                             <a class="nav-link" href="#research">Research</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#events">Events</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#teaching">Teaching</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#data">Data & Codes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
                         </li>
                     </ul>
                 </div>
@@ -107,13 +110,6 @@
                 <h3>Policy Report</h3>
                 <ul class="list" id="listPolicy"></ul>
             </section>
-        </section>
-        <section id="events">
-            <div class="container title">
-                <h1 class="titles">Events</h1>
-            </div>
-            <p class="events-intro">Upcoming seminars and conference presentations.</p>
-            <ul class="event-list" id="listEvents"></ul>
         </section>
         <section id="teaching">
             <div class="container title">
@@ -321,8 +317,15 @@
                 </div>
             </section>
         </section>
+        <section id="events">
+            <div class="container title">
+                <h1 class="titles">Events</h1>
+            </div>
+            <p class="events-intro">Upcoming seminars and conference presentations.</p>
+            <ul class="event-list" id="listEvents"></ul>
+        </section>
     </main>
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=20260909" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <footer class="py-4 text-center text-muted">

@@ -230,6 +230,16 @@ El repo tampoco tiene `.gitignore`.
 3. El sitio es de **una sola página**: no agregar URLs de subpáginas al `sitemap.xml`.
 4. Hay dos figuras sin usar en `img/data&codes/education/`: `public_sector_degree.png` y
    `wages_entrepreneurship_degrees.png`.
+5. **Caché de GitHub Pages.** Sirve los assets con `Cache-Control: max-age=600`. Como
+   `index.html` cambia de contenido, el navegador lo vuelve a bajar, pero `main.js` y
+   `style.css` conservan la misma URL y **se siguen leyendo desde caché**. Síntoma típico:
+   el HTML nuevo aparece pero el JS no corre — p. ej. la sección Events se ve con título y
+   bajada pero **con la lista vacía**. No es un bug del código.
+   Por eso `index.html` los referencia como `css/style.css?v=20260909` y
+   `js/main.js?v=20260909`.
+   > **Al modificar `js/main.js` o `css/style.css` hay que subir esa fecha en las dos
+   > referencias de `index.html`.** Si no, los visitantes que ya estuvieron en el sitio
+   > siguen viendo la versión vieja.
 
 ---
 
@@ -291,7 +301,9 @@ en el Linux de GitHub Pages.
 Javier pidió una cuarta sección para listar seminarios y conferencias futuras.
 
 **Decisiones (elegidas por él):**
-- Posición en el menú: **después de Research** → Home · Research · Events · Teaching · Data & Codes.
+- Posición en el menú: primero se puso después de Research, pero Javier la **movió al final**
+  ese mismo día → **Home · Research · Teaching · Data & Codes · Events**. Motivo: con 9
+  seminarios la lista es larga y partía la página al medio.
 - Eventos pasados: **se ocultan automáticamente** por fecha.
 - Formato: **tarjetas con la fecha destacada** en un badge navy a la izquierda.
 
