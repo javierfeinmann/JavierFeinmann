@@ -227,11 +227,15 @@ El repo tampoco tiene `.gitignore`.
 
 ## 9. Pendientes abiertos
 
-- **"The Margins of Firm Tax Incentives"**: es el paper que Javier presenta en 6 de sus 9
-  seminarios, pero **no figura en `wp.json`**, así que un visitante que ve la agenda no puede
-  encontrarlo en Research. Puede ser un paper nuevo o el retítulo de *"Income Shifting vs. Real
-  Responses in Simplified Tax Regimes"* (el del Factor R). **Preguntar a Javier.**
-- **Push pendiente**: hay commits locales sin subir a `origin/main`.
+- **"The Margins of Firm Tax Incentives"** (confirmado por Javier el 2026-09-09):
+  **reemplaza** a *"Income Shifting vs. Real Responses in Simplified Tax Regimes"* (el del
+  Factor R, `id: Papers-Eight`, `img: 8`). Javier sube el draft nuevo el **10 u 11 de
+  septiembre de 2026**. Cuando llegue, hay que:
+  1. reemplazar el PDF en `files/research/working_papers/` (hoy está `slides_FactorR.pdf`);
+  2. actualizar título, `link` y `text` de la entrada `Papers-Eight` en `wp.json`;
+  3. revisar si la figura `img/research/working_papers/8.webp` sigue siendo la correcta;
+  4. verificar que el título coincida **exactamente** con el campo `paper` de los 6 seminarios
+     en `events.json`, para que agenda y Research sean consistentes.
 - **Git LFS**: migrar antes de que el CSV de 89 MB crezca (§5).
 
 ---
