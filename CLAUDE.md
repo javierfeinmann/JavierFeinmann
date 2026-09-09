@@ -188,8 +188,17 @@ El repo tampoco tiene `.gitignore`.
 - **Gotcha:** si Claude Code arrancó *antes* de instalar git, la sesión hereda el PATH viejo y
   `git` a secas no resuelve. Solución: reiniciar Claude Code, o llamar al ejecutable por ruta
   completa.
-- **Autenticación:** `credential.helper = manager` a nivel *system*. El token de GitHub ya está
-  en el Administrador de Credenciales de Windows → **el push no pide nada**.
+- **Autenticación / push (¡ojo!):** `credential.helper = manager` está configurado a nivel
+  *system*, **pero eso no significa que haya un token guardado**. Al 2026-09-09 la única
+  credencial en el Administrador de Credenciales de Windows es
+  `LegacyGeneric:target=GitHub - https://api.github.com/javierfeinmann`, que es la de **GitHub
+  Desktop**. Git Credential Manager busca otra entrada (`git:https://github.com`) que no
+  existe, así que **`git push` desde Claude Code falla** con:
+  `fatal: could not read Username for 'https://github.com': terminal prompts disabled`.
+  - **Workaround inmediato:** pushear desde **GitHub Desktop** (botón "Push origin").
+  - **Arreglo permanente:** correr `git push` una vez desde una terminal normal de Windows
+    (fuera de Claude Code); GCM abre el login del navegador y guarda el token. A partir de
+    ahí el push desde acá funciona solo. **Verificar si ya se hizo antes de prometer un push.**
 - **Identidad:** la config *local* del repo pisa a la global. Los commits salen como
   `javierfeinmann <jfeinmann@berkeley.edu>`, consistente con todo el historial. La global
   (que puso GitHub Desktop) usa el email `@users.noreply.github.com` — **no** es la que se usa.
