@@ -214,7 +214,17 @@ El repo tampoco tiene `.gitignore`.
 
 1. **GitHub Pages distingue mayúsculas de minúsculas** (Linux); Windows no. Una ruta con
    `.PNG` cuando el archivo es `.png` **funciona en local y se rompe en producción**.
-   Siempre verificar rutas contra el nombre real del archivo.
+
+   > **La fuente autoritativa del nombre real es `git ls-files`, NO `Get-ChildItem`.**
+   > El 2026-09-09 se "arregló" `wages_degree_distribution.PNG` → `.png` basándose en un
+   > listado de PowerShell que lo mostraba en minúscula, cuando git lo tenía en **mayúscula**.
+   > El resultado fue romper en producción una imagen que funcionaba. Se corrigió renombrando
+   > el archivo en git a minúscula (dos `git mv` pasando por un nombre temporal, porque en un
+   > filesystem case-insensitive un rename de solo-mayúsculas no se detecta).
+
+   Hay un script de auditoría case-sensitive de todas las referencias del sitio en
+   `scratchpad/audit_case.py` (compara `index.html` + los JSON contra `git ls-files`).
+   Vale la pena volver a correrlo después de tocar rutas o agregar archivos.
 2. Las imágenes de perfil y logo están en `img/home/`, **no** en `img/`. Es un error fácil de
    repetir en los metatags.
 3. El sitio es de **una sola página**: no agregar URLs de subpáginas al `sitemap.xml`.
