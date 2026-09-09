@@ -76,17 +76,17 @@
     },
 
         {
-        "title": "Income Shifting vs. Real Responses in Simplified Tax Regimes",
+        "title": "The Margins of Firm Tax Incentives: Behavior, avoidance, and selection of small firms",
         "coauthors": [
             { "name": "Rafael Bressan", "url": "" },
             { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }           
         ],
         "subtitle": "New!",
-        "link": "./files/research/working_papers/slides_FactorR.pdf",
+        "link": "./files/research/working_papers/FactorR_draft_09092026.pdf",
         "img": 8,
         "id": "Papers-Eight",
-        "text": "Small and medium-sized firms (SME) play a central role in economic activity worldwide and they are often subject to simplified tax regimes (STR) aiming to promote registration and reduce hassle costs. When STRs rely on revenue taxes two major concerns arise. First, revenue taxes do not allow for cost deductibility, reducing input demand such as labor. Second, low reporting and monitoring requirements facility tax evasion and avoidance. Understanding how firms subject to STR respond in all these different margins is critical to a proper design that fosters registration and growth without opening loopholes to game the system affecting government revenues. We study the ''Factor R'' policy in Brazil, which massively reduced the revenue tax rate for firms that reached a threshold of total payroll over total revenues equal to .28. The policy created two critical sources of variation. Firms that were already above this threshold simply saw their revenue tax rate reduced by 10pp. Firms that were below the threshold had to increase their Factor R up to .28 to get the revenue tax rate, which could be achieved by increasing employees' payroll, shifting owners' dividends to wages or reducing revenues. First, we find that right after the introduction of the policy a large share of firms bunch at the threshold. The bunching grows over time, totaling 15% of all firms by 2024. For firms above the threshold pre-reform, we find an intensive margin revenue elasticity of .79. For those below the threshold, we find very large and growing intensive margin income-shifting elasticties of around 1.16, but no response in total revenues or employment."
+        "text": "Governments in developing countries extensively use preferential tax regimes to promote the registration, growth, and employment of small and medium-sized firms, with mixed results. Using novel linked microdata, we study Brazil's 2018 Factor R reform, which granted a large revenue-tax cut to firms whose payroll reached 28% of revenue. We develop a framework in which the reform's value to firms governs both incumbent behavior and selection: firms benefit either by naturally satisfying the rule through high labor intensity or by profitably manufacturing eligibility. Incumbent firms that automatically received the tax cut increased reported revenue by 10%, with no employment response. When eligibility instead required behavioral adjustment, firms overwhelmingly chose the cheapest margin, shifting owner dividends to wages rather than increasing employee payroll. Entry increased by about 50%, but selection operated through the same low-cost margin: marginal entrants were selected on income-shifting opportunities rather than labor intensity, and 35% of marginal entrants represent reallocation from another tax regime rather than additional entry. Thus, policy outcomes depend jointly on the elasticity of the real behavior policymakers seek to affect, the availability of alternative adjustment margins and the enforcement environment, and the composition of firms induced to participate."
     },
 
     {

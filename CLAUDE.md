@@ -256,15 +256,17 @@ El repo tampoco tiene `.gitignore`.
 
 ## 9. Pendientes abiertos
 
-- **"The Margins of Firm Tax Incentives"** (confirmado por Javier el 2026-09-09):
-  **reemplaza** a *"Income Shifting vs. Real Responses in Simplified Tax Regimes"* (el del
-  Factor R, `id: Papers-Eight`, `img: 8`). Javier sube el draft nuevo el **10 u 11 de
-  septiembre de 2026**. Cuando llegue, hay que:
-  1. reemplazar el PDF en `files/research/working_papers/` (hoy está `slides_FactorR.pdf`);
-  2. actualizar título, `link` y `text` de la entrada `Papers-Eight` en `wp.json`;
-  3. revisar si la figura `img/research/working_papers/8.webp` sigue siendo la correcta;
-  4. verificar que el título coincida **exactamente** con el campo `paper` de los 6 seminarios
-     en `events.json`, para que agenda y Research sean consistentes.
+- **Draft actualizado del Factor R**: el `FactorR_draft_09092026.pdf` que está publicado es la
+  versión del 2026-09-09. Javier dijo que pasaría una **versión actualizada el 10 u 11 de
+  septiembre de 2026**. Cuando llegue: reemplazar el PDF, **releer el abstract del PDF nuevo**
+  (no asumir que no cambió) y actualizar `text` en `Papers-Eight` de `wp.json`.
+- **Figura de `Papers-Eight`**: sigue siendo `img/research/working_papers/8.webp`, que era la
+  del paper anterior. **Preguntar a Javier** si quiere cambiarla por una del draft nuevo.
+- **Títulos corto vs. largo**: `wp.json` usa el título completo *"The Margins of Firm Tax
+  Incentives: Behavior, avoidance, and selection of small firms"*; `events.json` usa la forma
+  corta *"The Margins of Firm Tax Incentives"* en los 6 seminarios, a propósito, para que las
+  tarjetas no queden enormes. **Es deliberado, no una inconsistencia** — si se renombra el
+  paper hay que tocar los dos archivos.
 - **Git LFS**: migrar antes de que el CSV de 89 MB crezca (§5).
 
 ---
@@ -336,3 +338,29 @@ no parezca un paper titulado "TBD".
 Los archivos usan **UTF-8 sin BOM**; combinado con `<meta charset="UTF-8">` los acentos
 renderizan bien. Cuidado: PowerShell 5.1 los muestra mal en consola (`AndrÃ©s`), pero es un
 artefacto de la terminal, no del archivo.
+
+### 2026-09-09 — Paper del Factor R actualizado
+
+Javier subió `files/research/working_papers/FactorR_draft_09092026.pdf` y borró
+`slides_FactorR.pdf`. Se actualizó la entrada `Papers-Eight` de `wp.json`:
+
+- **Título:** *Income Shifting vs. Real Responses in Simplified Tax Regimes* → *The Margins of
+  Firm Tax Incentives: Behavior, avoidance, and selection of small firms*.
+- **`link`** al PDF nuevo, **`text`** con el abstract real del draft.
+- `coauthors` (Bressan, Bachas, Hsu Rocha), `img: 8`, `subtitle: "New!"` e `id` sin cambios:
+  el orden de autores del PDF ya coincidía con el del JSON.
+
+**Cómo se sacó el abstract:** no hay `pdftoppm` en la máquina, así que la herramienta Read no
+puede renderizar PDFs. Sí está **`pypdf`** instalado en el Python del sistema:
+
+```powershell
+python -c "from pypdf import PdfReader; print(PdfReader(r'ruta.pdf').pages[0].extract_text())"
+```
+
+Ojo: el texto extraído viene con guiones de corte de línea (`re-sults`, `frame-work`) que hay
+que unir a mano antes de meterlo en el JSON.
+
+**Cómo se editó `wp.json`:** con un script que hace reemplazo sobre el **texto crudo**, no con
+`json.dump`, para no perder la indentación ni las líneas en blanco entre entradas. El script
+verifica que cada valor viejo aparezca exactamente una vez antes de tocar nada y revalida el
+JSON al final. Queda en `scratchpad/update_wp.py` como plantilla para la próxima.
