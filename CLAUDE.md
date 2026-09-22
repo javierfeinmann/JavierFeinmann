@@ -364,3 +364,15 @@ que unir a mano antes de meterlo en el JSON.
 `json.dump`, para no perder la indentación ni las líneas en blanco entre entradas. El script
 verifica que cada valor viejo aparezca exactamente una vez antes de tocar nada y revalida el
 JSON al final. Queda en `scratchpad/update_wp.py` como plantilla para la próxima.
+
+### 2026-09-22 — Dos eventos nuevos
+
+Commit `662354d` (pusheado por Javier desde GitHub Desktop). Se agregaron a `events.json`:
+- **NBER Economic Analysis of Business Taxation, Fall 2026** — Conference, 2026-10-23,
+  Cambridge, MA. `link` a la página oficial de NBER con `linkLabel: "Program"` (el programa
+  detallado se publica en esa misma URL).
+- **SkiPE Workshop 2027** — Workshop, 2027-01-09 a 2027-01-11, Lenzerheide, Suiza. Paper `TBD`.
+
+Se usó "Cambridge, MA" (no solo "Cambridge") para evitar confusión con Cambridge, UK.
+Las entradas se insertaron en orden cronológico en el archivo por legibilidad, aunque
+`main.js` ordena solo.
