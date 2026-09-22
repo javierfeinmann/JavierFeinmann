@@ -20,6 +20,16 @@
     },
 
     {
+        "date": "2026-10-23",
+        "event": "NBER Economic Analysis of Business Taxation, Fall 2026",
+        "kind": "Conference",
+        "location": "Cambridge, MA, United States",
+        "paper": "The Margins of Firm Tax Incentives",
+        "link": "https://www.nber.org/conferences/economic-analysis-business-taxation-fall-2026",
+        "linkLabel": "Program"
+    },
+
+    {
         "date": "2026-12-01",
         "event": "Universidad de San Andrés, Department of Economics",
         "kind": "Seminar",
@@ -74,6 +84,17 @@
         "event": "Development Bank of Latin America and the Caribbean (CAF)",
         "kind": "Seminar",
         "location": "Buenos Aires, Argentina",
+        "paper": "TBD",
+        "link": "",
+        "linkLabel": ""
+    },
+
+    {
+        "date": "2027-01-09",
+        "endDate": "2027-01-11",
+        "event": "SkiPE Workshop 2027",
+        "kind": "Workshop",
+        "location": "Lenzerheide, Switzerland",
         "paper": "TBD",
         "link": "",
         "linkLabel": ""
