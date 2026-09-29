@@ -3,7 +3,18 @@ institutions.csv,institution_id,Stable identifier: ISO3 country code + short ins
 institutions.csv,country_iso3,"Country or territory (ISO 3166-1 alpha-3; HKG = Hong Kong SAR, TWN = Taiwan).",text
 institutions.csv,country_name,Country or territory name.,text
 institutions.csv,institution,"Institution name in English, as listed by QS.",text
-institutions.csv,qs2024_rank,"Rank as printed in the QS World University Rankings 2024 (published 27 June 2023); '=' marks a tie, ranges are QS rank bands.",text
+institutions.csv,in_qs2027_overall,"In the sample 'QS 2027, top 5 per country by overall rank' (ties at the fifth position included).",yes | no
+institutions.csv,in_qs2027_ar,"In the sample 'QS 2027, top 5 per country by Academic Reputation score' (ties included).",yes | no
+institutions.csv,in_qs2024,"In the sample 'QS 2024, top 5 per country by overall rank' (the v1.0 sample).",yes | no
+institutions.csv,qs2027_rank,"Overall rank as printed in the QS World University Rankings 2027 (published June 2026); '=' marks a tie, ranges are rank bands; blank = not ranked in 2027.",text
+institutions.csv,qs2027_ar_score,"QS 2027 Academic Reputation score (0-100), the basis of the reputation sample.",number
+institutions.csv,qs2027_pos_overall,Position within the country by QS 2027 overall rank (rank bands in QS order).,integer
+institutions.csv,qs2027_pos_ar,Position within the country by QS 2027 Academic Reputation score.,integer
+institutions.csv,qs2024_rank,"Rank as printed in the QS World University Rankings 2024 (published 27 June 2023), for institutions of the QS 2024 sample.",text
+institutions.csv,qs_status,"QS 2027 'Status' classification, as published by QS (not our control variable; see documentation).",Public | Private not for Profit | Private for Profit | blank
+institutions.csv,qs_size,"QS 2027 size class (student body): S, M, L, XL.",S | M | L | XL
+institutions.csv,qs_focus,"QS 2027 subject focus: FC fully comprehensive, CO comprehensive, FO focused, SP specialist.",FC | CO | FO | SP
+institutions.csv,qs_research,"QS 2027 research intensity: VH very high, HI high, MD medium, LO low.",VH | HI | MD | LO
 institutions.csv,control,"Strict control: public if the state owns the institution (a public-law body it created, no private founder) or appoints a majority of its governing body; otherwise private. Public funding and academic autonomy do not enter.",public | private_nonprofit | private_forprofit
 institutions.csv,control_basis,"What establishes the control code: state ownership, state appointment of a board majority, both, or (private institutions) the legal form.",ownership | appointment | ownership_and_appointment | legal_form
 institutions.csv,govt_dependent_flag,"Private institutions only: yes if the government transfers substantial resources explicitly to cover tuition or teaching (per-student teaching grants, the state paying students' fees). Research funding and student loans do not count. Always 'no' for public institutions.",yes | no
@@ -45,9 +56,10 @@ institutions.csv,enrolment_url,Source of the enrolment figure.,URL
 institutions.csv,enrolment_note,"Scope of the enrolment figure (what is counted, derivations).",text
 institutions.csv,n_sources,Number of documented sources for the institution in sources.csv.,integer
 institutions.csv,notes,"Justification of the coding, including checker and recode notes (tags such as [R103] identify the run that added the text).",text
+countries.csv,sample,Sample the row is computed on (one row per sample and country).,qs2027_overall | qs2027_ar | qs2024
 countries.csv,country_iso3,Country or territory code.,text
 countries.csv,country_name,Country or territory name.,text
-countries.csv,n_institutions,Selected institutions (QS 2024 top 5 with ties; fewer where QS lists fewer).,integer
+countries.csv,n_institutions,Institutions of the country in this sample (top 5 with ties; fewer where QS lists fewer).,integer
 countries.csv,n_priced,Selected institutions with an established headline charge.,integer
 countries.csv,public_share,Share of selected institutions with control = public (equal weights).,share
 countries.csv,free_share,Share of priced institutions in the free band.,share

@@ -168,17 +168,16 @@ usuarios de R y de Stata).
 
 ### Segundo proyecto: Higher Education around the World (desde 2026-09-29)
 
-Bloque debajo del de Brasil en `#data`: párrafo + una figura (`img/data&codes/education/higher_education_world_grid.webp`,
-grilla 3×3 control × precio: instituciones sin ponderar a la izquierda, países ponderados por matrícula a la
-derecha) + dos carpetas (Visualisation & Documentation / Data). Todo lo demás vive en
+Bloque debajo del de Brasil en `#data`: párrafo + una figura (`img/data&codes/education/higher_education_world_prices.webp`:
+cada universidad de la muestra QS 2027 por reputación académica, precio / PIB per cápita por país; se genera con
+`python scripts/build_slide_institutions.py --web --sample qs2027_ar` en el proyecto de investigación) + dos carpetas (Visualisation & Documentation / Data). Todo lo demás vive en
 `files/data&codes/higher_education_world/`: `index.html` (visualización interactiva completa, página standalone),
 `documentation.html`, `data/*.csv` y el `.zip` de la versión.
 
 - **Esos archivos NO se editan a mano.** Se generan en el proyecto de investigación
   (`social_mobility_and_higher_education_in_Brazil/claude/elite_he_claude`) con
   `python scripts/build_release.py <versión> "<Mes Año>"` → `releases/<versión>/`, y se copian acá.
-- **Al publicar una versión nueva:** copiar `index.html`, `documentation.html`, `data/*.csv` y el zip nuevo; convertir
-  `grid_figure.png` a `.webp` en la ruta de la figura; en `index.html` actualizar los números del párrafo
+- **Al publicar una versión nueva:** copiar `index.html`, `documentation.html`, `data/*.csv` y el zip nuevo; regenerar la figura (`build_slide_institutions.py --web --sample qs2027_ar`) y convertirla a `.webp` en la ruta de la figura; en `index.html` actualizar los números del párrafo
   (países, instituciones) y el nombre del zip / la etiqueta "Data (vX, Mes Año)".
 - Cita requerida: la misma que el proyecto de Brasil.
 
@@ -405,3 +404,12 @@ Sin commitear (Javier revisa y pushea). Cambios:
   hace falta subir el `?v=`.
 - Verificado con `python -m http.server`: todas las rutas nuevas devuelven 200, nombres en minúscula tal como están
   en disco (correr la auditoría case-sensitive después de `git add` si se quiere doble chequeo).
+
+### 2026-09-29 (tarde) — Higher Education around the World v2.0
+
+Sin commitear (Javier revisa y pushea). Release v2.0 del proyecto de investigación: tres muestras (QS 2027 top 5 por
+rank general, QS 2027 top 5 por reputación académica, QS 2024), 328 instituciones. Se reemplazaron en
+`files/data&codes/higher_education_world/` la visualización (ahora con selector de muestra, `?sample=`), la documentación y
+los 6 CSV; se agregó `higher_education_world_v2.0.zip` (el zip v1.0 queda en la carpeta). La figura del sitio ahora es la
+muestra QS 2027 por rank general. En `index.html` se actualizó el párrafo (muestras, 328 instituciones), la etiqueta
+"Data (v2.0, September 2026)" y el link al zip.
