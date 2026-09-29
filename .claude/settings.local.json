@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.nber.org)",
+      "PowerShell(python -c \"import json;d=json.load\\(open\\('events.json',encoding='utf-8'\\)\\);print\\(len\\(d\\)\\);b=open\\('events.json','rb'\\).read\\(\\);print\\('CRLF',b.count\\(b'\\\\r\\\\n'\\),'LF',b.count\\(b'\\\\n'\\)\\)\"; git diff --stat)"
+    ]
+  }
+}
