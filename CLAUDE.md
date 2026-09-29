@@ -163,8 +163,24 @@ usuarios de R y de Stata).
 - `graduates` y `new_students`, cohortes **2010–2015**
 - `co_escola`: egresados de secundaria que rindieron el **ENEM**, cohortes 2009–2014
 - Confidencialidad: **solo clases con ≥10 estudiantes**. No hay datos individuales.
-- Cita requerida: *"Social Mobility and Higher Education: The Role of Elite Public Colleges"*,
-  Feinmann & Hsu Rocha.
+- Cita requerida: *"Inequality and Higher Education: The Role of Elite Public Colleges"*,
+  Feinmann & Hsu Rocha (título nuevo del paper desde 2026-09-29; antes "Social Mobility and ...").
+
+### Segundo proyecto: Higher Education around the World (desde 2026-09-29)
+
+Bloque debajo del de Brasil en `#data`: párrafo + una figura (`img/data&codes/education/higher_education_world_grid.webp`,
+grilla 3×3 control × precio: instituciones sin ponderar a la izquierda, países ponderados por matrícula a la
+derecha) + dos carpetas (Visualisation & Documentation / Data). Todo lo demás vive en
+`files/data&codes/higher_education_world/`: `index.html` (visualización interactiva completa, página standalone),
+`documentation.html`, `data/*.csv` y el `.zip` de la versión.
+
+- **Esos archivos NO se editan a mano.** Se generan en el proyecto de investigación
+  (`social_mobility_and_higher_education_in_Brazil/claude/elite_he_claude`) con
+  `python scripts/build_release.py <versión> "<Mes Año>"` → `releases/<versión>/`, y se copian acá.
+- **Al publicar una versión nueva:** copiar `index.html`, `documentation.html`, `data/*.csv` y el zip nuevo; convertir
+  `grid_figure.png` a `.webp` en la ruta de la figura; en `index.html` actualizar los números del párrafo
+  (países, instituciones) y el nombre del zip / la etiqueta "Data (vX, Mes Año)".
+- Cita requerida: la misma que el proyecto de Brasil.
 
 ### ⚠️ Riesgo con el límite de GitHub
 
@@ -376,3 +392,16 @@ Commit `662354d` (pusheado por Javier desde GitHub Desktop). Se agregaron a `eve
 Se usó "Cambridge, MA" (no solo "Cambridge") para evitar confusión con Cambridge, UK.
 Las entradas se insertaron en orden cronológico en el archivo por legibilidad, aunque
 `main.js` ordena solo.
+
+### 2026-09-29 — Open Data: "Higher Education around the World"
+
+Sin commitear (Javier revisa y pushea). Cambios:
+- `index.html`: bloque nuevo en `#data` debajo del de Brasil (párrafo, figura 3×3 enlazada a la visualización,
+  carpetas "Visualisation & Documentation" y "Data (v1.0, September 2026)"). Cita del bloque de Brasil actualizada al
+  título nuevo del paper. Editado sobre texto crudo preservando CRLF.
+- Archivos nuevos: `files/data&codes/higher_education_world/` (visualización, documentación, 6 CSV, zip v1.0;
+  ~3,5 MB en total) e `img/data&codes/education/higher_education_world_grid.webp`.
+- Generado con `build_release.py v0.1` del proyecto de investigación (ver §5). No se tocó `css/` ni `js/`, así que no
+  hace falta subir el `?v=`.
+- Verificado con `python -m http.server`: todas las rutas nuevas devuelven 200, nombres en minúscula tal como están
+  en disco (correr la auditoría case-sensitive después de `git add` si se quiere doble chequeo).

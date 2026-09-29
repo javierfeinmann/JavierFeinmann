@@ -1,0 +1,103 @@
+file,variable,definition,values
+institutions.csv,institution_id,Stable identifier: ISO3 country code + short institution code.,text
+institutions.csv,country_iso3,"Country or territory (ISO 3166-1 alpha-3; HKG = Hong Kong SAR, TWN = Taiwan).",text
+institutions.csv,country_name,Country or territory name.,text
+institutions.csv,institution,"Institution name in English, as listed by QS.",text
+institutions.csv,qs2024_rank,"Rank as printed in the QS World University Rankings 2024 (published 27 June 2023); '=' marks a tie, ranges are QS rank bands.",text
+institutions.csv,control,"Strict control: public if the state owns the institution (a public-law body it created, no private founder) or appoints a majority of its governing body; otherwise private. Public funding and academic autonomy do not enter.",public | private_nonprofit | private_forprofit
+institutions.csv,control_basis,"What establishes the control code: state ownership, state appointment of a board majority, both, or (private institutions) the legal form.",ownership | appointment | ownership_and_appointment | legal_form
+institutions.csv,govt_dependent_flag,"Private institutions only: yes if the government transfers substantial resources explicitly to cover tuition or teaching (per-student teaching grants, the state paying students' fees). Research funding and student loans do not count. Always 'no' for public institutions.",yes | no
+institutions.csv,control_group,Row of the 3x3 grid: public; private and government-dependent; private and not government-dependent.,public | private_govt_dependent | private_not_govt_dependent
+institutions.csv,tuition_std,"Standard annual tuition for the reference student, local currency.",number (local currency)
+institutions.csv,compulsory_fees_std,"Other annual charges every reference student must pay (registration, student contribution, student-service fees, compulsory levies). Excludes housing, insurance, application and entrance-exam fees, optional items.",number (local currency)
+institutions.csv,headline_charge,"tuition_std + compulsory_fees_std: the standard annual charge after reductions that apply to all students in every year, before any targeted aid. Blank = not established.",number (local currency)
+institutions.csv,currency,Currency of the charges (ISO 4217).,text
+institutions.csv,averaging_rule,How the headline was set when prices vary: one rate; midpoint of the published range across programmes; full-pay rate of an income-based scale.,uniform | midpoint_of_range | full_pay_rate_of_scale
+institutions.csv,charge_min,"Lowest charge in the range (programmes or scale points), when not uniform.",number (local currency)
+institutions.csv,charge_max,"Highest charge in the range, when not uniform.",number (local currency)
+institutions.csv,gdp_pc_2023_lcu,"GDP per capita 2023, current local currency (World Bank WDI NY.GDP.PCAP.CN; Taiwan from DGBAS national accounts).",number (local currency)
+institutions.csv,charge_ratio,headline_charge / gdp_pc_2023_lcu.,share (0.05 = 5%)
+institutions.csv,charge_band,"Band of charge_ratio, fixed before coding: free < 1%; low 1-5%; low_moderate 5-10%; moderate 10-25%; high >= 25%.",free | low | low_moderate | moderate | high | blank
+institutions.csv,price_group,Column of the 3x3 grid: free; low to low-moderate (1-10%); moderate or high (>= 10%).,free | low_to_low_moderate | moderate_or_high | blank
+institutions.csv,band_min,Band of charge_min.,band
+institutions.csv,band_max,Band of charge_max.,band
+institutions.csv,band_unstable,yes if charge_min and charge_max fall in different bands.,yes | no
+institutions.csv,charge_band_alt,Band under the alternative cut-offs 2.5 / 5 / 15 / 30% (sensitivity).,band
+institutions.csv,govt_fee_aid,"Government-funded means-tested (household income) waiver, income-scaled fee or grant paid against the charge. no = searched, not found; not_applicable = the headline charge is zero.",yes | no | unknown | not_applicable
+institutions.csv,govt_cash_aid,Government-funded means-tested non-repayable cash paid to the student (e.g. living-cost grants).,yes | no | unknown
+institutions.csv,inst_fee_aid,"Institution-run means-tested fee reduction (own waivers, income scales, need-based scholarships against the charge; donor-funded schemes run by the institution count).",yes | no | unknown | not_applicable
+institutions.csv,inst_cash_aid,Institution-run means-tested cash paid to the student.,yes | no | unknown
+institutions.csv,govt_fee_share_pct,"Documented share of students receiving govt_fee_aid (national or institutional, see notes). Blank = not found.",percent
+institutions.csv,govt_cash_share_pct,Documented share of students receiving govt_cash_aid.,percent
+institutions.csv,inst_fee_share_pct,Documented share of students receiving inst_fee_aid.,percent
+institutions.csv,inst_cash_share_pct,Documented share of students receiving inst_cash_aid.,percent
+institutions.csv,zero_pay_entrant_share_pct,"Documented share of first-year entrants who pay nothing (state-funded places, gratuidad, full income-based exemption). Used only in the majority-of-entrants sensitivity.",percent
+institutions.csv,year_observed,Academic year the charge applies to. Target 2023/24 (or calendar 2023); a nearest year is flagged in the text.,text
+institutions.csv,confidence,high = official source for the year and a uniform or clear rule; medium; low.,high | medium | low
+institutions.csv,control_check,Result of the independent check of control.,agree | disagree | unresolved
+institutions.csv,band_check,Result of the independent check of the charge band.,agree | disagree | unresolved
+institutions.csv,checker_run,Identifier of the check run (see verification.csv).,text
+institutions.csv,enrolment,"Enrolment used for weights, 2023/24 or calendar 2023.",number of students
+institutions.csv,enrolment_measure,first_degree_headcount where published; otherwise the flagged fallback.,first_degree_headcount | undergraduate_headcount | total_headcount | fte | blank
+institutions.csv,enrolment_year,"Year of the enrolment figure, as stated by the source.",text
+institutions.csv,enrolment_confidence,Confidence in the enrolment figure.,high | medium | low
+institutions.csv,enrolment_url,Source of the enrolment figure.,URL
+institutions.csv,enrolment_note,"Scope of the enrolment figure (what is counted, derivations).",text
+institutions.csv,n_sources,Number of documented sources for the institution in sources.csv.,integer
+institutions.csv,notes,"Justification of the coding, including checker and recode notes (tags such as [R103] identify the run that added the text).",text
+countries.csv,country_iso3,Country or territory code.,text
+countries.csv,country_name,Country or territory name.,text
+countries.csv,n_institutions,Selected institutions (QS 2024 top 5 with ties; fewer where QS lists fewer).,integer
+countries.csv,n_priced,Selected institutions with an established headline charge.,integer
+countries.csv,public_share,Share of selected institutions with control = public (equal weights).,share
+countries.csv,free_share,Share of priced institutions in the free band.,share
+countries.csv,free_or_low_share,Share of priced institutions in the free or low band.,share
+countries.csv,public_and_free_or_low_share,Share of selected institutions that are public and free or low.,share
+countries.csv,control_type,public if public_share >= 0.7; mixed if 0.3-0.7; private if < 0.3.,public | mixed | private
+countries.csv,price_type,Median charge band; 'incomplete(a..b)' when a missing headline could move the median between a and b.,band | incomplete(..)
+countries.csv,country_type,control_type-price_type (rule fixed before coding).,text
+countries.csv,grid_cell_unweighted,3x3 cell holding the plurality of the country's priced institutions (control_group|price_group); ties list both cells separated by ' / '.,text
+countries.csv,grid_cell_enrolment_weighted,3x3 cell holding the plurality of the enrolment of the country's priced institutions. Blank = not computable (an institution lacks enrolment).,text
+countries.csv,n_govt_fee_aid_yes,"Institutions with govt_fee_aid = yes (similarly n_govt_cash_aid_yes, n_inst_fee_aid_yes, n_inst_cash_aid_yes).",integer
+countries.csv,n_govt_fee_aid_unknown,Institutions with govt_fee_aid = unknown (similarly for the other three aid variables).,integer
+countries.csv,n_band_unstable,Institutions whose range spans two bands.,integer
+countries.csv,n_low_confidence,Institutions coded with low confidence.,integer
+countries.csv,sens_top1,Country type using only the top-ranked institution.,text
+countries.csv,sens_top3,Country type using the top 3.,text
+countries.csv,sens_alt_bands,Country type with band cut-offs 2.5 / 5 / 15 / 30%.,text
+countries.csv,sens_govdep_as_public,Country type counting government-dependent private institutions as public.,text
+countries.csv,sens_enrolment_weighted,Country type with enrolment weights (public share weighted; price = weighted median band). Blank = not computable.,text
+countries.csv,sens_range_low_end,Country type using charge_min where prices vary.,text
+countries.csv,sens_range_high_end,Country type using charge_max where prices vary.,text
+countries.csv,sens_free_track_headline,Country type pricing exam-rationed free places (instead of fee-paying places) where both exist.,text
+countries.csv,sens_majority_entrants_price,Country type setting the headline to 0 where a documented majority of entrants pay nothing.,text
+countries.csv,gdp_pc_2023_lcu,"GDP per capita 2023, current local currency.",number
+countries.csv,gini,"Gini index, World Bank Poverty and Inequality Platform: latest national survey 2013-2023.",0-100
+countries.csv,gini_year,Survey reporting year.,year
+countries.csv,gini_welfare_type,income or consumption (consumption-based Ginis are lower).,income | consumption
+countries.csv,gini_coverage,Survey coverage.,national | urban
+countries.csv,gini_flag,Reason the Gini is excluded from fits (e.g. non-national coverage).,text
+sources.csv,source_row_id,Identifier of the source row.,text
+sources.csv,institution_id,Institution the source documents.,text
+sources.csv,variable,"Variable(s) the source supports (rank, control, tuition, compulsory_fees, aid variables...).",text
+sources.csv,url,URL exactly as opened (often an archived Wayback Machine capture contemporaneous with 2023/24).,URL
+sources.csv,publisher,Publisher of the source.,text
+sources.csv,title,Title of the page or document.,text
+sources.csv,year_of_applicability,Year the source applies to.,text
+sources.csv,accessed_at,Date the source was opened.,date
+sources.csv,locator,"Where in the source the evidence is (page, table, section).",text
+sources.csv,quote,Verbatim quote in the original language (capped at 400 characters in this release; ' [...]' marks a cut).,text
+sources.csv,quote_truncated,yes if the quote was shortened for this release.,yes | no
+sources.csv,read_via,"How the source was read (browser fetch, archive, PDF extraction...).",text
+verification.csv,institution_id,Institution checked.,text
+verification.csv,checker_run,Check run identifier.,text
+verification.csv,control_check,Did the independent check reach the same control?,agree | disagree | unresolved
+verification.csv,band_check,Did the independent check reach the same charge band?,agree | disagree | unresolved
+verification.csv,sources_opened,Number of sources the checker opened.,integer
+verification.csv,disagreement,Description of any disagreement.,text
+verification.csv,resolution,How the disagreement was resolved.,text
+verification.csv,notes,Checker's notes.,text
+decision_log.csv,decision_id,"Decision identifier (D001...), referenced in notes and documentation.",text
+decision_log.csv,created_at,Date of the decision.,date
+decision_log.csv,methods_version,Protocol version the decision belongs to.,text
+decision_log.csv,issue / options / decision / rationale,"The question, the options considered, what was decided and why.",text
