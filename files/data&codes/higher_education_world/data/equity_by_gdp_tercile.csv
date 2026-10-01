@@ -1,0 +1,4 @@
+gdp_tercile,n_countries,gdp_pc_ppp_range,institutions_known,institutions_yes,institution_share_pct,countries_any_yes,countries_national_rule,countries
+lowest third,20,"6,019-30,246",93,53,57.0,16,13,PAK KGZ NGA IND PHL UZB ZAF IDN ECU PER PRY UKR EGY BRA COL THA AZE MEX CHN ARG
+middle third,21,"33,174-56,151",100,48,48.0,11,8,CHL URY MYS KAZ OMN GRC TUR SVK ROU HUN HRV POL EST PRT LTU JPN NZL ISR ESP CZE SVN
+highest third,21,"57,430-144,728",105,30,28.6,6,3,KOR ITA GBR FRA FIN CAN SWE HKG SAU DEU AUS BEL AUT DNK ARE NLD USA CHE NOR IRL SGP

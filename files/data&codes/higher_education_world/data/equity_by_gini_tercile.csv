@@ -1,0 +1,4 @@
+gini_tercile,n_countries,gini_range,institutions_known,institutions_yes,institution_share_pct,countries_any_yes,countries_national_rule,n_consumption_gini,countries
+least unequal third,19,23.0-29.9,91,30,33.0,7,6,6,IND SVK SVN UKR CZE NLD ARE NOR BEL KGZ FIN EGY POL IRL KAZ SWE PAK ROU DNK
+middle third,19,30.1-34.3,93,53,57.0,12,8,2,HRV HUN EST AUT CAN TWN FRA JPN GBR KOR ESP GRC CHE THA DEU AUS NGA PRT ITA
+most unequal third,19,34.5-54.6,90,44,48.9,13,10,4,UZB PHL CHN LTU IDN ISR MYS PER URY USA ARG CHL MEX TUR PRY ECU BRA ZAF COL

@@ -413,3 +413,18 @@ rank general, QS 2027 top 5 por reputación académica, QS 2024), 328 institucio
 los 6 CSV; se agregó `higher_education_world_v2.0.zip` (el zip v1.0 queda en la carpeta). La figura del sitio ahora es la
 muestra QS 2027 por rank general. En `index.html` se actualizó el párrafo (muestras, 328 instituciones), la etiqueta
 "Data (v2.0, September 2026)" y el link al zip.
+
+### 2026-10-01 — Higher Education around the World v2.2
+
+Sin commitear (Javier revisa y pushea). Release v2.2 del proyecto de investigación (`build_release.py v0.5`), que incluye
+lo de v2.1 (nunca publicada por separado): precios más recientes (2025/26) junto a los de 2023/24, 63 países y
+376 instituciones; y, para la muestra QS 2027 por reputación académica (308 instituciones), variables de admisión
+(postulantes, admitidos, ingresantes, vacantes, régimen de admisión) y reglas formales de equidad en la admisión
+(cupos, puntos extra, etc.), con fuentes y chequeo independiente. Se reemplazaron en
+`files/data&codes/higher_education_world/` la visualización, la documentación y los CSV, y se agregaron 9 CSV nuevos
+(price_sources, price_verification, admissions_sources, admissions_verification, equity_by_type, equity_by_country,
+equity_country_correlates, equity_by_gdp_tercile, equity_by_gini_tercile) y `higher_education_world_v2.2.zip` (los zips
+v1.0 y v2.0 quedan). La figura `higher_education_world_prices.webp` se regeneró con precios recientes (muestra por
+reputación académica). En `index.html`: párrafo (63 países, 376 instituciones, precios 2025/26, admisión y equidad),
+etiqueta "Data (v2.2, October 2026)", cuatro links nuevos en la lista de datos y link al zip v2.2. Editado sobre bytes
+preservando CRLF. No se tocó `css/` ni `js/`.

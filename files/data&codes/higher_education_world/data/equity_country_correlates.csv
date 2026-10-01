@@ -1,0 +1,64 @@
+country_iso3,region,n_institutions,n_yes,n_known,equity_share,national_rule,gdp_pc_usd_2023,gdp_pc_ppp_2023,gini,gini_welfare_type,gross_tertiary_enrolment_ratio,private_enrolment_share_pct,govt_funding_per_student_pct_gdppc,price_type
+ARE,Middle East & North Africa,5,0,5,0.000,no,49851,78020,26.4,income,63.74,72.81,,high
+ARG,Latin America,5,0,5,0.000,no,14262,30246,42.4,income,107.8,24.25,16.91,free
+AUS,Oceania,5,5,5,1.000,no,65058,72273,33.8,income,108.4,22.02,17.84,moderate
+AUT,Western Europe,5,0,5,0.000,no,56580,74261,31.2,income,92.61,20,34.91,free
+AZE,Central Asia & Caucasus,6,0,6,0.000,no,7133,23671,,,41.34,8.937,22.29,moderate
+BEL,Western Europe,5,0,5,0.000,no,55245,72630,26.8,income,82.15,57.39,31.86,low
+BRA,Latin America,5,5,5,1.000,yes,10378,21193,51.5,income,69.73,73.41,36.87,free
+CAN,North America,5,5,5,1.000,yes,54848,64962,31.5,income,76.27,,32.51,moderate
+CHE,Western Europe,5,0,5,0.000,no,104450,93940,33.5,income,73.54,16.09,37.81,low
+CHL,Latin America,5,5,5,1.000,yes,17082,33174,43.2,income,110.2,84.02,20.4,high
+CHN,East Asia,5,5,5,1.000,yes,12951,25200,36.0,consumption,76.88,14.43,,low_moderate
+COL,Latin America,5,2,4,0.500,yes,7012,21282,54.6,income,59.29,49.75,21.43,high
+CZE,Central & Eastern Europe,5,0,5,0.000,no,31762,56062,25.7,income,66.73,10.89,21.64,free
+DEU,Western Europe,5,0,5,0.000,no,54777,72262,33.7,income,76.71,10.49,33.33,free
+DNK,Nordic,5,0,5,0.000,no,68044,77425,29.9,income,78.96,0.9939,45.36,free
+ECU,Latin America,5,2,5,0.400,yes,6718,15907,44.6,income,67.89,45.1,52.68,high
+EGY,Middle East & North Africa,5,0,5,0.000,no,3457,18540,28.5,consumption,38.04,19.9,,incomplete(low_moderate..high)
+ESP,Western Europe,5,3,5,0.600,yes,33493,55661,33.4,income,93.77,21.85,21.82,low
+EST,Central & Eastern Europe,4,0,4,0.000,no,30264,48848,30.7,income,65.67,7.897,35.9,free
+FIN,Nordic,5,0,5,0.000,no,52865,63467,27.4,income,110.3,47.51,30.89,free
+FRA,Western Europe,5,5,5,1.000,yes,44700,60927,31.8,income,71.53,23.69,30.96,free
+GBR,Western Europe,5,5,5,1.000,no,49920,60787,32.4,income,80.41,100,38.65,moderate
+GRC,Central & Eastern Europe,5,0,5,0.000,no,23344,42614,33.4,income,165.1,,8.668,free
+HKG,East Asia,5,0,5,0.000,no,50525,71519,,,120.1,17.71,33.21,moderate
+HRV,Central & Eastern Europe,4,2,4,0.500,no,22183,47760,30.1,income,81.18,8.385,21.02,free
+HUN,Central & Eastern Europe,5,5,5,1.000,yes,22209,46376,30.6,income,60.52,13.21,27.55,moderate
+IDN,Southeast Asia,5,5,5,1.000,yes,4876,15428,36.1,consumption,44.88,59.4,20.77,high
+IND,South Asia,5,5,5,1.000,yes,2434,9853,23.0,consumption,34.45,57.78,49.27,high
+IRL,Western Europe,5,5,5,1.000,no,106819,133440,29.0,income,77.59,4.983,20.76,low
+ISR,Middle East & North Africa,5,4,5,0.800,no,52126,55301,38.3,income,56.26,83.22,19.87,low_moderate
+ITA,Western Europe,5,0,5,0.000,no,39280,60350,34.3,income,75.95,13.58,24.49,low_moderate
+JPN,East Asia,5,0,5,0.000,no,35215,52726,32.3,income,64.49,78.83,,low_moderate
+KAZ,Central Asia & Caucasus,5,5,5,1.000,yes,12879,38547,29.2,consumption,52.86,53.56,7.097,moderate
+KGZ,Central Asia & Caucasus,5,4,4,1.000,yes,2138,7304,27.2,consumption,53.88,13.64,4.898,high
+KOR,East Asia,5,5,5,1.000,yes,35674,57430,32.9,income,111.9,80.27,14.16,moderate
+LTU,Central & Eastern Europe,5,0,5,0.000,no,27983,52720,36.0,income,75.62,8.817,15.72,moderate
+MEX,Latin America,5,0,5,0.000,no,13831,25188,43.5,income,48.2,35.23,25.37,free
+MYS,Southeast Asia,5,5,5,1.000,yes,11386,36497,40.7,income,38.5,46.83,24.83,low
+NGA,Sub-Saharan Africa,5,5,5,1.000,yes,2139,8712,33.9,consumption,,,,low_moderate
+NLD,Western Europe,5,0,5,0.000,no,63516,80392,25.7,income,86.59,16.16,31.71,low_moderate
+NOR,Nordic,5,0,5,0.000,no,90984,107768,26.5,income,95.5,15.42,38.95,free
+NZL,Oceania,5,5,5,1.000,no,49302,54950,,,77.24,13.3,25.49,moderate
+OMN,Middle East & North Africa,5,4,5,0.800,yes,21028,41980,,,42.23,46.54,43.86,high
+PAK,South Asia,5,1,4,0.250,yes,1360,6019,29.6,consumption,10.86,19.99,67.24,high
+PER,Latin America,5,1,5,0.200,yes,7919,17042,40.7,income,71.24,72.41,10.79,high
+PHL,Southeast Asia,5,1,5,0.200,yes,3804,10995,35.2,consumption,47.41,54.27,,high
+POL,Central & Eastern Europe,5,0,5,0.000,no,22145,48473,28.5,income,80.91,26.93,26.68,free
+PRT,Western Europe,5,5,5,1.000,yes,27635,49800,33.9,income,77.68,17.35,23.23,low
+PRY,Latin America,1,1,1,1.000,no,6303,17585,44.2,income,,,,low
+ROU,Central & Eastern Europe,5,5,5,1.000,yes,18244,45982,29.8,income,55.17,12.53,26.25,low_moderate
+SAU,Middle East & North Africa,5,0,4,0.000,no,36157,71624,,,83.88,4.53,,free
+SGP,Southeast Asia,4,0,4,0.000,no,86383,144728,,,97.29,26,25.18,moderate
+SVK,Central & Eastern Europe,5,0,5,0.000,no,24615,45865,23.8,income,54.47,12.86,26.39,free
+SVN,Central & Eastern Europe,3,0,3,0.000,no,32660,56151,24.7,income,80.08,15.53,24.12,free
+SWE,Nordic,5,0,5,0.000,no,54950,68458,29.3,income,84,9.679,42.21,free
+THA,Southeast Asia,5,3,5,0.600,no,7211,23598,33.5,consumption,49.08,15.64,18.17,moderate
+TUR,Middle East & North Africa,5,0,5,0.000,no,13375,43196,43.7,income,105.9,7.889,,free
+TWN,East Asia,5,5,5,1.000,yes,,,31.6,income,,,,low_moderate
+UKR,Central & Eastern Europe,5,5,5,1.000,yes,5140,17680,25.6,consumption,87.19,8.046,34.47,moderate
+URY,Latin America,4,0,4,0.000,no,23379,34546,40.9,income,79.95,17.07,25.39,incomplete(free..high)
+USA,North America,7,0,7,0.000,no,82587,82587,41.8,income,79.36,26.27,,high
+UZB,Central Asia & Caucasus,5,5,5,1.000,yes,3016,11679,34.5,income,59.81,3.398,,moderate
+ZAF,Sub-Saharan Africa,5,3,4,0.750,no,6034,15212,54.0,consumption,23.49,7.822,55.64,high

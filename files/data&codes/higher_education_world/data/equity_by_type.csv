@@ -1,0 +1,45 @@
+dimension,group,n_institutions,n_yes,n_no,n_unknown,yes_share_of_known_pct,yes_all_programmes,yes_some_programmes,yes_access_programme_only,yes_national_rule,yes_institutional_only,n_disability_rule
+All institutions,all,308,136,167,5,44.9,108,25,3,95,41,111
+Control (strict),public,247,113,132,2,46.1,94,18,1,81,32,95
+Control (strict),"private, not government-dependent",38,7,28,3,20.0,4,1,2,3,4,8
+Control (strict),"private, government-dependent",23,16,7,0,69.6,10,6,0,11,5,8
+Latest price band,moderate or high,135,74,58,3,56.1,56,15,3,50,24,59
+Latest price band,free,93,17,75,1,18.5,15,2,0,10,7,22
+Latest price band,low or low-moderate,74,45,29,0,60.8,37,8,0,35,10,29
+Latest price band,no price,6,0,5,1,0.0,0,0,0,0,0,1
+QS 2027 Status,Public,257,123,132,2,48.2,99,21,3,82,41,97
+QS 2027 Status,Private not for Profit,46,10,33,3,23.3,7,3,0,10,0,14
+QS 2027 Status,not stated,4,2,2,0,50.0,2,0,0,2,0,0
+QS 2027 Status,Private for Profit,1,1,0,0,100.0,0,1,0,1,0,0
+Admission regime,own_admission,122,44,73,5,37.6,30,11,3,19,25,21
+Admission regime,central_allocation,105,53,52,0,50.5,46,7,0,46,7,65
+Admission regime,mixed,76,39,37,0,51.3,32,7,0,30,9,25
+Admission regime,open_admission,5,0,5,0,0.0,0,0,0,0,0,0
+Position by academic reputation,2nd-5th in country,245,107,133,5,44.6,85,21,1,77,30,88
+Position by academic reputation,1st in country,63,29,34,0,46.0,23,4,2,18,11,23
+Region,Western Europe,55,23,32,0,41.8,17,4,2,13,10,15
+Region,Central & Eastern Europe,51,17,34,0,33.3,16,1,0,15,2,28
+Region,Latin America,40,16,23,1,41.0,15,1,0,11,5,13
+Region,Middle East & North Africa,30,8,21,1,27.6,3,5,0,4,4,10
+Region,East Asia,25,15,10,0,60.0,11,4,0,14,1,10
+Region,Southeast Asia,24,14,10,0,58.3,11,3,0,11,3,9
+Region,Central Asia & Caucasus,21,14,6,1,70.0,14,0,0,14,0,14
+Region,Nordic,20,0,20,0,0.0,0,0,0,0,0,0
+Region,North America,12,5,7,0,41.7,2,2,1,2,3,0
+Region,Oceania,10,10,0,0,100.0,6,4,0,0,10,5
+Region,South Asia,10,6,3,1,66.7,6,0,0,6,0,7
+Region,Sub-Saharan Africa,10,8,1,1,88.9,7,1,0,5,3,0
+Country type (latest prices),public-free,76,12,63,1,16.0,10,2,0,7,5,16
+Country type (latest prices),public-moderate,55,33,22,0,60.0,23,9,1,17,16,28
+Country type (latest prices),public-low_moderate,35,20,15,0,57.1,16,4,0,20,0,6
+Country type (latest prices),public-low,26,19,7,0,73.1,17,2,0,13,6,20
+Country type (latest prices),public-high,25,17,6,2,73.9,16,1,0,14,3,10
+Country type (latest prices),private-high,22,6,16,0,27.3,1,5,0,6,0,9
+Country type (latest prices),mixed-high,20,10,8,2,55.6,10,0,0,9,1,8
+Country type (latest prices),mixed-free,15,0,15,0,0.0,0,0,0,0,0,2
+Country type (latest prices),mixed-moderate,10,10,0,0,100.0,10,0,0,9,1,9
+Country type (latest prices),mixed-low,5,0,5,0,0.0,0,0,0,0,0,0
+Country type (latest prices),mixed-incomplete(low_moderate..high),5,0,5,0,0.0,0,0,0,0,0,3
+Country type (latest prices),private-moderate,5,5,0,0,100.0,2,1,2,0,5,0
+Country type (latest prices),private-low_moderate,5,4,1,0,80.0,3,1,0,0,4,0
+Country type (latest prices),private-incomplete(free..high),4,0,4,0,0.0,0,0,0,0,0,0

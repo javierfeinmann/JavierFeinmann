@@ -55,6 +55,18 @@ institutions.csv,enrolment_confidence,Confidence in the enrolment figure.,high |
 institutions.csv,enrolment_url,Source of the enrolment figure.,URL
 institutions.csv,enrolment_note,"Scope of the enrolment figure (what is counted, derivations).",text
 institutions.csv,n_sources,Number of documented sources for the institution in sources.csv.,integer
+institutions.csv,latest_academic_year,Academic year of the latest documented price (target 2025/26 or calendar 2025).,text
+institutions.csv,latest_headline_charge,"Latest headline charge (same definition as headline_charge), local currency. Rows with latest_year_flag use an earlier year.",number (local currency)
+institutions.csv,latest_charge_min,Lowest charge in the latest range.,number (local currency)
+institutions.csv,latest_charge_max,Highest charge in the latest range.,number (local currency)
+institutions.csv,latest_price_year,"Year of the price and of the GDP per capita used for the latest ratio (2025, or earlier where flagged; D058, D060, D062).",2023 | 2024 | 2025
+institutions.csv,latest_gdp_pc_lcu,"GDP per capita of latest_price_year, current local currency (World Bank WDI, July 2026 vintage; Taiwan DGBAS).",number (local currency)
+institutions.csv,latest_charge_ratio,latest_headline_charge / latest_gdp_pc_lcu.,share
+institutions.csv,latest_charge_band,Band of latest_charge_ratio (same cut-offs).,band
+institutions.csv,latest_band_unstable,yes if the latest minimum and maximum fall in different bands.,yes | no
+institutions.csv,latest_year_flag,Set when the latest view uses an earlier price year (shown with * in the visualisation and figures).,text
+institutions.csv,change_vs_2023_24,How the latest price relates to the 2023/24 row.,no_change | price_update | regime_change | correction_of_2023_24 | not_established
+institutions.csv,latest_confidence,Confidence in the latest price.,high | medium | low
 institutions.csv,notes,"Justification of the coding, including checker and recode notes (tags such as [R103] identify the run that added the text).",text
 countries.csv,sample,Sample the row is computed on (one row per sample and country).,qs2027_overall | qs2027_ar | qs2024
 countries.csv,country_iso3,Country or territory code.,text
@@ -68,6 +80,8 @@ countries.csv,public_and_free_or_low_share,Share of selected institutions that a
 countries.csv,control_type,public if public_share >= 0.7; mixed if 0.3-0.7; private if < 0.3.,public | mixed | private
 countries.csv,price_type,Median charge band; 'incomplete(a..b)' when a missing headline could move the median between a and b.,band | incomplete(..)
 countries.csv,country_type,control_type-price_type (rule fixed before coding).,text
+countries.csv,latest_price_type,Price type computed with the latest prices (2025/26; earlier years where flagged).,band | incomplete(...)
+countries.csv,latest_country_type,Country type computed with the latest prices.,text
 countries.csv,grid_cell_unweighted,3x3 cell holding the plurality of the country's priced institutions (control_group|price_group); ties list both cells separated by ' / '.,text
 countries.csv,grid_cell_enrolment_weighted,3x3 cell holding the plurality of the enrolment of the country's priced institutions. Blank = not computable (an institution lacks enrolment).,text
 countries.csv,n_govt_fee_aid_yes,"Institutions with govt_fee_aid = yes (similarly n_govt_cash_aid_yes, n_inst_fee_aid_yes, n_inst_cash_aid_yes).",integer
@@ -95,6 +109,39 @@ sources.csv,variable,"Variable(s) the source supports (rank, control, tuition, c
 sources.csv,url,URL exactly as opened (often an archived Wayback Machine capture contemporaneous with 2023/24).,URL
 sources.csv,publisher,Publisher of the source.,text
 sources.csv,title,Title of the page or document.,text
+institutions.csv,selectivity_regime,"Admissions (QS 2027 academic-reputation sample only, 2023/24 entry): how first-year first-degree places are allocated.",own_admission | central_allocation | mixed | open_admission
+institutions.csv,adm_ref_year,Entry year or cycle the admissions figures refer to (nearest year flagged).,text
+institutions.csv,applicants,Applicants for first-year first-degree entry (unit in sel_unit; scope in sel_scope).,number
+institutions.csv,admitted,Offers or admissions for first-year first-degree entry.,number
+institutions.csv,entrants,Students who enrolled (first-year first-degree entry).,number
+institutions.csv,places,Places offered or approved intake capacity.,number
+institutions.csv,sel_unit,Whether applicants count persons or applications (a person applying to several programmes counts several times).,unique_applicants | applications | not_applicable | blank
+institutions.csv,sel_scope,"Scope of the admissions figures (campuses, levels, routes, nationalities, sources).",text
+institutions.csv,sel_confidence,Collector's confidence in the admissions figures.,high | medium | low
+institutions.csv,rate_comparability,"Independent check: are applicants, admitted and entrants on the same base? Rates are released only if ok.",ok | mixed_bases | na
+institutions.csv,admission_rate,"admitted / applicants, computed only where rate_comparability = ok.",0-1
+institutions.csv,entry_rate,"entrants / applicants, computed only where rate_comparability = ok.",0-1
+institutions.csv,equity_formal,Formal equity admission rule for 2023/24 entry for groups defined by income-correlated disadvantage (documentation section 6; disability-only rules excluded).,yes | no | unknown | blank (not in sample)
+institutions.csv,equity_scope,Coverage of the equity rule.,all_programmes | some_programmes | access_programme_only
+institutions.csv,equity_basis,Groups targeted (several separated by ;).,income_or_socioeconomic; race_ethnicity; caste_tribe; public_school; region_or_rural; first_generation; other
+institutions.csv,equity_instrument,How the rule works (several separated by ;).,reserved_places; bonus_points; lower_cutoff; separate_track; contextual_offer
+institutions.csv,equity_mandate,Who sets the rule.,national_law; government_regulation; institutional
+institutions.csv,equity_reserved_share_pct,"Share of places the rule reserves, as stated by the source (several categories summed, noted).",percent
+institutions.csv,equity_reserved_places,"Number of places reserved, where published.",number
+institutions.csv,equity_reserved_places_base,Total places the reserved count is a share of.,number
+institutions.csv,equity_filled_entrants,"Entrants admitted under the equity rule, where published.",number
+institutions.csv,equity_filled_entrants_base,Total entrants the filled count is a share of.,number
+institutions.csv,equity_filled_share_pct,Filled share as stated by the source.,percent
+institutions.csv,share_includes_disability,yes if the stated reserved share is one indivisible figure that also covers disability.,yes | no | blank
+institutions.csv,equity_disability_rule,"A group rule (reserved places, lower threshold, separate track) for applicants with disabilities exists; not counted as formal equity.",yes | no | unknown
+institutions.csv,equity_confidence,Confidence in the equity coding.,high | medium | low
+institutions.csv,adm_notes,"Admissions notes: sources, conflicts, coordinator and checker corrections.",text
+admissions_sources.csv,(all columns),"Sources of the admissions variables (collector runs X02-X14 and checker runs K02-K14), same columns as sources.csv.",text
+admissions_verification.csv,(all columns),"Independent check per institution: blind equity coding, equity_check, scope_check, selectivity_check, rate_comparability, disagreement, resolution.",text
+equity_by_type.csv,(all columns),"Formal equity rules by type of institution: counts of yes / no / unknown, share of known, scope and mandate, per group of each dimension.",numbers
+equity_country_correlates.csv,(all columns),"Per country: n institutions, n with a rule, equity_share, national_rule, GDP per capita 2023 (US$ and PPP), Gini and welfare type, gross tertiary enrolment ratio, private enrolment share, government funding per student, price type.",numbers
+equity_by_gdp_tercile.csv / equity_by_gini_tercile.csv,(all columns),"Thirds of countries by GDP per capita (PPP 2023) or Gini: countries, range, institutions with a rule / known, countries with any rule, with a national rule.",numbers
+equity_by_country.csv,(all columns),"Per country: institutions with and without a formal equity rule, pattern, national rule.",text
 sources.csv,year_of_applicability,Year the source applies to.,text
 sources.csv,accessed_at,Date the source was opened.,date
 sources.csv,locator,"Where in the source the evidence is (page, table, section).",text
