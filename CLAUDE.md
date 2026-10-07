@@ -428,3 +428,10 @@ v1.0 y v2.0 quedan). La figura `higher_education_world_prices.webp` se regeneró
 reputación académica). En `index.html`: párrafo (63 países, 376 instituciones, precios 2025/26, admisión y equidad),
 etiqueta "Data (v2.2, October 2026)", cuatro links nuevos en la lista de datos y link al zip v2.2. Editado sobre bytes
 preservando CRLF. No se tocó `css/` ni `js/`.
+
+### 2026-10-07 — PUT Brasil: R&R en AEJ: Economic Policy
+
+Sin commitear. `Papers-One` de `wp.json`: `subtitle` vacío → `"R&R, <i>AEJ: Economic Policy</i>"` (forma corta, elegida por Javier
+en vez de "Revise & Resubmit, American Economic Journal: ..."; se renderiza en negrita sobre los chips de premios). Draft, abstract y premios sin cambios.
+Nota: los commits `fce2d97`/`4570132` (2026-09-29) ya habían cambiado `Papers-Three` a *"Cash Wage Payments, Tax Evasion,
+and Informality"*, con abstract nuevo y PDF propio `paper_fininc_short_2.pdf`.
