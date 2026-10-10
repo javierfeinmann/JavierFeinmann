@@ -271,16 +271,11 @@ El repo tampoco tiene `.gitignore`.
 
 ## 9. Pendientes abiertos
 
-- **Draft actualizado del Factor R**: el `FactorR_draft_09092026.pdf` que está publicado es la
-  versión del 2026-09-09. Javier dijo que pasaría una **versión actualizada el 10 u 11 de
-  septiembre de 2026**. Cuando llegue: reemplazar el PDF, **releer el abstract del PDF nuevo**
-  (no asumir que no cambió) y actualizar `text` en `Papers-Eight` de `wp.json`.
 - **Figura de `Papers-Eight`**: sigue siendo `img/research/working_papers/8.webp`, que era la
-  del paper anterior. **Preguntar a Javier** si quiere cambiarla por una del draft nuevo.
-- **Títulos corto vs. largo**: `wp.json` usa el título completo *"The Margins of Firm Tax
-  Incentives: Behavior, avoidance, and selection of small firms"*; `events.json` usa la forma
-  corta *"The Margins of Firm Tax Incentives"* en los 6 seminarios, a propósito, para que las
-  tarjetas no queden enormes. **Es deliberado, no una inconsistencia** — si se renombra el
+  del paper anterior. Javier confirmó el 2026-10-10 que **se queda así**.
+- **Título del Factor R en dos archivos**: desde el 2026-10-10 `wp.json` y `events.json` usan
+  el **mismo título completo**, *"Who Qualifies? Firm Responses and Selection into Preferential
+  Tax Regimes"* (ya no hay forma corta en los eventos; lo eligió Javier). Si se renombra el
   paper hay que tocar los dos archivos.
 - **Git LFS**: migrar antes de que el CSV de 89 MB crezca (§5).
 
@@ -435,3 +430,19 @@ Sin commitear. `Papers-One` de `wp.json`: `subtitle` vacío → `"R&R, <i>AEJ: E
 en vez de "Revise & Resubmit, American Economic Journal: ..."; se renderiza en negrita sobre los chips de premios). Draft, abstract y premios sin cambios.
 Nota: los commits `fce2d97`/`4570132` (2026-09-29) ya habían cambiado `Papers-Three` a *"Cash Wage Payments, Tax Evasion,
 and Informality"*, con abstract nuevo y PDF propio `paper_fininc_short_2.pdf`.
+
+### 2026-10-10 — Factor R: título nuevo "Who Qualifies?"
+
+Sin commitear (Javier revisa y pushea). Javier reemplazó `FactorR_draft_09092026.pdf` por
+`FactorR_draft_10102026.pdf`. `Papers-Eight` de `wp.json`:
+
+- **Título:** *The Margins of Firm Tax Incentives: Behavior, avoidance, and selection of small
+  firms* → *Who Qualifies? Firm Responses and Selection into Preferential Tax Regimes*.
+- **`link`** al PDF nuevo, **`text`** con el abstract del draft nuevo (extraído con `pypdf`).
+- Coautores, `subtitle: "New!"`, `img: 8` e `id` sin cambios.
+
+`events.json`: las 7 entradas de ese paper (Dublin, Barcelona, NBER, San Andrés, FGV-SP, FGV-RJ,
+PUC-Rio) pasan de la forma corta al **título completo nuevo**, por decisión de Javier.
+
+Nota de entorno: `python` a secas no resuelve en esta máquina (alias de la Microsoft Store);
+usar **`py`** (Python 3.14, con `pypdf` instalado).
