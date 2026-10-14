@@ -446,3 +446,16 @@ PUC-Rio) pasan de la forma corta al **título completo nuevo**, por decisión de
 
 Nota de entorno: `python` a secas no resuelve en esta máquina (alias de la Microsoft Store);
 usar **`py`** (Python 3.14, con `pypdf` instalado).
+
+### 2026-10-14 — Pensiones: título nuevo "Insuring Widows"
+
+Sin commitear (Javier revisa y pushea). `Papers-Six` de `wp.json`:
+
+- **Título:** *Survivorship Pension: Labor Supply and Optimal Insurance* → *Insuring Widows:
+  Theory and Evidence*.
+- **Coautor nuevo:** Antoine Ferey (https://sites.google.com/site/fereyantoine), antes de Hsu
+  Rocha (orden alfabético, como en la página de Roberto).
+- **Sin link principal** (`link: ""`, no se renderiza "[Working paper]"). El draft actual
+  (`pensions_brazil_JF_RHR.pdf`) queda enlazado dentro del `subtitle`:
+  *"New version coming soon (old version here)"*, con "here" como link. Imita el formato de la
+  página de Roberto. Cuando salga el draft nuevo: volver a poner `link` y simplificar el `subtitle`.
