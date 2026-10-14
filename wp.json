@@ -104,12 +104,13 @@
     },
 
     {
-        "title": "Survivorship Pension: Labor Supply and Optimal Insurance",
+        "title": "Insuring Widows: Theory and Evidence",
         "coauthors": [
+            { "name": "Antoine Ferey", "url": "https://sites.google.com/site/fereyantoine" },
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }
         ],
-        "subtitle": "New draft coming soon",
-        "link": "./files/research/working_papers/pensions_brazil_JF_RHR.pdf",
+        "subtitle": "New version coming soon (old version <a href=\"./files/research/working_papers/pensions_brazil_JF_RHR.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>)",
+        "link": "",
         "img": 6,
         "id": "Papers-Six",
         "text": "In this paper, we separate labor supply responses to widowhood in the presence of survivorship pension into 1) response to widowhood, absent the pension, and 2) response to the benefit, within the widowhood state. We show that this distinction is critical for welfare analysis in a standard Bailey–Chetty formula. Using microdata from Brazil, we leverage both an event study around a household member’s death and two policy reforms that reduced pension duration and value. We find that benefit recipients reduce weekly hours worked by 22% four years after the spouse’s death, with no substitution to other labor market activities, such as self-employment or business ownership. Reductions in the duration and in the value of benefits reduce labor supply responses. We estimate an elasticity of Labor Earnings with respect to the lifetime benefit values of between 0.50 and 0.72."
