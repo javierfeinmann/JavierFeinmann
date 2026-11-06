@@ -1,20 +1,29 @@
 [
-     {
-        "title": "Projects on Income and Wealth Inequality, Income Shifting, and Investment Financing in Brazil",
+    {
+        "title": "Measuring Alternative Outsourcing Contracts: Tax and Labor Implications",
         "coauthors": [
-            { "name": "Theo Palomo", "url": "https://sites.google.com/view/theopalomo/" },
-            { "name": "Davi Bhering", "url": ""},
-            { "name": "Thiago Scot", "url": "https://sites.google.com/view/thiagoscot/"},
-            { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
-            { "name": "Gabriel Zucman", "url": "https://gabriel-zucman.eu/"}            ],
+            { "name": "Rafael Bressan", "url": "" }
+        ],
         "subtitle": "EU Tax Observatory and Receita Federal de Brasil",
-        "text": "This collaboration comprises several projects that merge tax records, ownership registries, and employer-employee data, enabling us to allocate total income (both corporate and individual) across individuals. The first paper measures the effective tax rate for each percentile of the income distribution, documenting a notable drop at the top and explaining how income composition affects effective tax rates. The second project investigates income-shifting strategies used by wealthy individuals, which helps to explain the findings in the first paper. More specifically, we examine two forms of income shifting. The first, known as pejotização, involves employees misrepresenting their contractual arrangements. Rather than being hired as regular employees (and therefore paying labor income tax and social security contributions), they establish a company and are hired as contractors, so their wages are treated as corporate income. This approach allows highly paid professionals such as accountants, doctors, lawyers, and others to benefit from a significantly lower tax rate. We also analyze “mirroring” incentives, where firm owners choose to report corporate income as wages to reduce their tax rates. To study this, we exploit variation introduced by the fator R, a formula that enables firm owners to lower their revenue tax rate if total payroll accounts for at least 28% of their total revenues. The third project examines the effects of treating debt and equity equally for investment financing. In most countries, interest on debt is deductible, but equity financing is not, which distorts financing decisions toward debt. Under Brazil’s corporate income tax, however, firms can deduct the cost of equity financing through an allowance on corporate equity, thereby equalizing the tax treatment of debt and equity. We investigate how this policy affects firms’ capital structure, entrepreneurship, and investment decisions.",
+        "text": "",
         "type": "",
         "slides":"",
         "id": "Progress-Three"
-    },       
- 
- 
+    },
+
+    {
+        "title": "Wage Spillovers and Collective Bargaining",
+        "coauthors": [
+            { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" },
+            { "name": "Damian Vergara", "url": "https://sites.google.com/view/damianvergara/home" }
+        ],
+        "subtitle": "",
+        "text": "",
+        "type": "",
+        "slides": "",
+        "id": "Progress-Four"
+    },
+
     {
         "title": "Payments Under the Table in Latin America ",
         "coauthors": [
@@ -29,11 +38,10 @@
             "Funded by the World Bank",
             "Slides available!"
         ],
-        "text": "This project extends the work of Feinmann et al (2023) to document payments under the table for formal employees in other Latin American countries. At the moment, we included Argentina, Brazil, Chile, Colombia, Mexico, and Peru. We find a simple average of 15% of employees who admit to receiving PUTs for about 23% of their wages. This average masks significant heterogeneity, where Argentina has more than a quarter of formal employees receiving PUTs, while this number is less than 4% in Chile. Importantly, PUTs are sharply increasing in wages, with employees in the top wage group doubling the underreporting sharing of low-wage employees. This patterns holds for both the extensive and intensive margin, and for five out of the six countries surveyed. Despite the fact that wages and firm size are positively correlated, PUTs are strongly decreasing on firm size, measured by number of employees. However, a considerable share of employees in firms with more than 500 employees admits to receiving PUTs. Consistent across all countries, employees holding managerial positions and with frequent interaction with owners are significantly more likely to receive PUTs, even after controlling by wages and firm size. We also show that employees with less tax morale are more likely to report receiving PUTs. We provide evidence that cash, bank transfer and virtual payments are the main disbursement methods for PUTs, but with significant heterogeneity across income groups. High-wage employees are more likely to use bank transfers and virtual payments, and less likely to use cash. Finally, we also explore what regulations or taxes help to determine the amount PUT. We find that the minimum wage, social security contributions, payroll taxes, and income taxes ranked at the top. Income taxes and social security contributions are relatively more important for high-wage earners, compared to the minimum wage or extra hours, which are more relevant for low-wage employees. The end of the presentation lists the project's next steps.",
+        "text": "",
         "type": "[Slides]",
         "slides":"./files/research/work_in_progress/PUT_latam_slides.pdf",
         "img": "",
         "id": "Progress-One"
-    }   
-
+    }
 ]

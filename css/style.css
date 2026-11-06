@@ -454,3 +454,23 @@ main section{ padding-block: 1.5rem; } /* menos aire en vertical */
   .event-kind{ margin-left: 0; margin-top: .25rem; }
   .event-name{ display: flex; flex-direction: column; align-items: flex-start; }
 }
+
+
+/* ====== Work in Progress (plain list) ====== */
+.wip-list {
+  margin: 20px 35px 35px;
+  padding-left: 1.1rem;
+}
+.wip-item {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.wip-title {
+  font-weight: 600;
+  color: rgb(4, 4, 59);
+}
+.wip-coauthors,
+.wip-link {
+  font-size: 0.95rem;
+}
+.wip-link { font-weight: 600; }

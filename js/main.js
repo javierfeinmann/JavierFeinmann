@@ -1,6 +1,5 @@
 // === Grabs ===
 const accordionPapers   = document.getElementById('accordionPanelsStayOpenPapers');
-const accordionProgress = document.getElementById('accordionPanelsStayOpenProgress');
 const listPolicy        = document.getElementById('listPolicy');
 
 // === Helpers ===
@@ -90,65 +89,32 @@ fetchJSON('wp.json').then(data => {
   });
 });
 
-// === Advanced Work in Progress ===
+// === Work in Progress ===
+// Plain list (no dropdown): "Title (with A, B, and C) [Slides]".
+const listProgress = document.getElementById('listProgress');
+
+const joinNames = (names) => names.length <= 2
+  ? names.join(' and ')
+  : `${names.slice(0, -1).join(', ')}, and ${names[names.length - 1]}`;
+
 fetchJSON('progress.json').then(data => {
   data.forEach(element => {
-    const item = document.createElement('div');
-    item.className = 'accordion-item';
+    const item = document.createElement('li');
+    item.className = 'wip-item';
 
-    const headingId = `panelsStayOpen-heading-${element.id}`;
-    const collapseId = `panelsStayOpen-collapse-${element.id}`;
+    const names = (element.coauthors || []).map(c => (c.url && c.url.trim())
+      ? `<a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.name}</a>`
+      : c.name);
+    const withHTML = names.length ? ` <span class="wip-coauthors">(with ${joinNames(names)})</span>` : '';
 
-    // Header
-    item.innerHTML = `
-      <h2 class="accordion-header" id="${headingId}">
-        <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#${collapseId}"
-                aria-expanded="false"
-                aria-controls="${collapseId}">
-          ${element.title}
-        </button>
-      </h2>
-    `;
-
-    // Body
-    const body = document.createElement('div');
-    body.id = collapseId;
-    body.className = 'accordion-collapse collapse';
-    body.setAttribute('aria-labelledby', headingId);
-
-    // Reuse the same helpers as papers
-    const coauthorsHTML = renderCoauthors(element);  // uses element.coauthors or falls back to element.coauthor
-    const subtitleHTML  = element.subtitle ? `<div class="paper-subtitle">${element.subtitle}</div>` : '';
-    const bulletsHTML   = renderBullets(element);    // renders <ul> if element.bullets exists
-
-    // Link label: use element.type (strip outer brackets if present), else 'Slides'
     const rawLabel = (element.type || '').trim();
     const label = rawLabel ? rawLabel.replace(/^\[|\]$/g, '') : 'Slides';
     const linkHTML = (element.slides && element.slides.trim())
-      ? `<div class="paper-link"><b>[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${label}</a>]</b></div>`
+      ? ` <span class="wip-link">[<a href="${element.slides}" target="_blank" rel="noopener noreferrer">${label}</a>]</span>`
       : '';
 
-    const abstractHTML = element.text ? `<p class="paper-abstract">${element.text}</p>` : '';
-
-    // No image column for WIP
-    body.innerHTML = `
-      <div class="accordion-body">
-        <div class="accordion-content">
-          <div class="accordion-text">
-            ${coauthorsHTML}
-            ${subtitleHTML}
-            ${bulletsHTML}
-            ${linkHTML}
-            ${abstractHTML}
-          </div>
-        </div>
-      </div>
-    `;
-
-    item.appendChild(body);
-    accordionProgress.appendChild(item);
+    item.innerHTML = `<span class="wip-title">${element.title.trim()}</span>${withHTML}${linkHTML}`;
+    listProgress.appendChild(item);
   });
 });
 

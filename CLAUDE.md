@@ -35,7 +35,7 @@ tiempo de ejecución leyendo tres JSON de la raíz:
 | Archivo | Sección que alimenta | Contenedor en el HTML |
 |---|---|---|
 | `wp.json` | Working Papers (acordeón **con** figura) | `#accordionPanelsStayOpenPapers` |
-| `progress.json` | Advanced Work in Progress (acordeón **sin** figura) | `#accordionPanelsStayOpenProgress` |
+| `progress.json` | Working Progress (**lista simple**, sin desplegable) | `#listProgress` |
 | `policy.json` | Policy Report (lista simple) | `#listPolicy` |
 | `events.json` | Events (tarjetas de próximas charlas) | `#listEvents` |
 
@@ -68,11 +68,10 @@ tiempo de ejecución leyendo tres JSON de la raíz:
 
 ### Esquema de `progress.json`
 
-Igual que `wp.json` salvo que:
-- usa `slides` en vez de `link`;
-- usa `type` para la etiqueta del link (ej. `"[Slides]"` → se renderiza "Slides"); si está
-  vacío, cae a "Slides" por defecto;
-- **no** renderiza imagen (no hay columna de figura).
+Desde el 2026-11-06 se renderiza como **lista simple** (estilo página de Damian Vergara), no como acordeón:
+cada ítem es `Título (with A, B, and C) [Slides]`. Campos que se usan: `title`, `coauthors`, `slides` y `type`
+(etiqueta del link, ej. `"[Slides]"`; vacío → "Slides"). `subtitle`, `bullets` y `text` **ya no se muestran**
+(quedan en el JSON pero se ignoran). `id` ya no es necesario para el render.
 
 ### `policy.json`
 
@@ -250,8 +249,8 @@ El repo tampoco tiene `.gitignore`.
    `style.css` conservan la misma URL y **se siguen leyendo desde caché**. Síntoma típico:
    el HTML nuevo aparece pero el JS no corre — p. ej. la sección Events se ve con título y
    bajada pero **con la lista vacía**. No es un bug del código.
-   Por eso `index.html` los referencia como `css/style.css?v=20260909` y
-   `js/main.js?v=20260909`.
+   Por eso `index.html` los referencia como `css/style.css?v=20261106` y
+   `js/main.js?v=20261106`.
    > **Al modificar `js/main.js` o `css/style.css` hay que subir esa fecha en las dos
    > referencias de `index.html`.** Si no, los visitantes que ya estuvieron en el sitio
    > siguen viendo la versión vieja.
@@ -459,3 +458,18 @@ Sin commitear (Javier revisa y pushea). `Papers-Six` de `wp.json`:
   (`pensions_brazil_JF_RHR.pdf`) queda enlazado dentro del `subtitle`:
   *"New version coming soon (old version here)"*, con "here" como link. Imita el formato de la
   página de Roberto. Cuando salga el draft nuevo: volver a poner `link` y simplificar el `subtitle`.
+
+### 2026-11-06 — Varios: CREST, subtitles, Working Progress
+
+Sin commitear (Javier revisa y pushea).
+- `events.json`: CREST-ENSAE pasa de 2027-03-02 a **2027-06-01**.
+- `wp.json`: `Papers-Five` (Tax Progressivity) y `Papers-Seventh` (Labor Lawsuits) → `subtitle: "New version coming soon"`;
+  `Papers-Eight` (Who Qualifies?) → `subtitle` vacío.
+- `index.html`: encabezado "Advanced Work in Progress" → **"Working Progress"** (texto elegido por Javier).
+- `progress.json`: `Progress-Three` renombrado a *"Measuring Alternative Outsourcing Contracts: Tax and Labor
+  Implications"* (mismos coautores y subtitle); nuevo `Progress-Four` *"Wage Spillovers and Collective Bargaining"*
+  (Hsu Rocha, Damian Vergara). **Todos los work in progress van sin abstract** (`text: ""`).
+- `Progress-Three` (Outsourcing): coautores → **solo Rafael Bressan** (sin website).
+- **Work in progress pasa a lista simple** (sin acordeón), como la página de Damian Vergara: `main.js`, `index.html`
+  (`<ul id="listProgress">`), `style.css` (bloque `Work in Progress`). Cache-busting subido a `?v=20261106`.
+- CV: el commit `359c5e7` (ya pusheado) reemplazó los CV viejos por `files/home/Feinmann_CV.pdf` (+ `.docx`).

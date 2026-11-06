@@ -28,7 +28,7 @@
             { "name": "Leonardo Moreira", "url": ""},          
             { "name": "Gabriel Zucman", "url": "https://gabriel-zucman.eu/"}         
       ],
-        "subtitle": "New!",
+        "subtitle": "New version coming soon",
         "link": "https://www.taxobservatory.eu//www-site/uploads/2025/08/Tax-Progressivity-and-Inequality-in-Brazil-Evidence-from-Integrated-Administrative-Data.pdf",
         "img": 5,
         "id": "Papers-Five",
@@ -82,7 +82,7 @@
             { "name": "Pierre Bachas", "url": "https://pierrebachas.weebly.com/"},
             { "name": "Roberto Hsu Rocha", "url": "https://sites.google.com/view/robertohsurocha/home" }           
         ],
-        "subtitle": "New!",
+        "subtitle": "",
         "link": "./files/research/working_papers/FactorR_draft_10102026.pdf",
         "img": 8,
         "id": "Papers-Eight",
@@ -96,7 +96,7 @@
             { "name": "Marvin Cardoza", "url": ""},
             { "name": "Joaquin Herrera", "url": "" }           
         ],
-        "subtitle": "New!",
+        "subtitle": "New version coming soon",
         "link": "./files/research/working_papers/PUT_experiment_dominicana.pdf",
         "img": 7,
         "id": "Papers-Seventh",
